@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Impact Analysis</title>
+  <link rel="stylesheet" href="./impact.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./marketplace.html" class="active" style="color: var(--c-primary); font-weight: 600; border-bottom: 2px solid var(--c-primary);">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-outline impact-calc" style="border-color: #333; color: #333;">Impact Calculator</button>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; overflow: hidden;">
+        <img src="/images/guardian_portrait.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stepper -->
+  <div class="p-stepper fade-in-section slide-up">
+    <a href="./purchase.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      SELECT PROJECT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./quantity.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      QUANTITY
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./impact.html" class="p-step active" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">3</div>
+      IMPACT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./summary.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">4</div>
+      SUMMARY
+    </a>
+  </div>
+
+  <!-- Hero Split -->
+  <div class="i-hero-container fade-in-section slide-up">
+    <div class="i-split-box" style="display: block; background: transparent;">
+      <img src="/images/impact_hero.png" alt="Before and After Impact" style="width: 100%; height: auto; display: block;">
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="i-layout">
+    <div class="i-col-main fade-in-section slide-right">
+      
+      <!-- Top Metrics -->
+      <div class="i-metrics-bar">
+        <div class="i-alloc-box">
+          <div class="i-alloc-val">500</div>
+          <div class="i-alloc-label">TONNES CO₂</div>
+        </div>
+        
+        <div class="i-equiv-grid">
+          <div class="i-equiv-item">
+            <svg class="i-equiv-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+            <div class="i-equiv-val">108</div>
+            <div class="i-equiv-label">Cars off road</div>
+          </div>
+          <div class="i-equiv-item">
+            <svg class="i-equiv-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-8"></path><path d="M8 14l-4 4"></path><path d="M16 14l4 4"></path><circle cx="12" cy="7" r="5"></circle></svg>
+            <div class="i-equiv-val">8,250</div>
+            <div class="i-equiv-label">Trees protected</div>
+          </div>
+          <div class="i-equiv-item">
+            <svg class="i-equiv-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <div class="i-equiv-val">65</div>
+            <div class="i-equiv-label">Homes powered</div>
+          </div>
+          <div class="i-equiv-item">
+            <svg class="i-equiv-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div class="i-equiv-val">42</div>
+            <div class="i-equiv-label">Flights offset</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Cards Grid -->
+      <div class="i-cards-grid">
+        
+        <!-- Biodiversity -->
+        <div class="i-card">
+          <div class="i-card-header">
+            <div class="i-card-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              Biodiversity
+            </div>
+            <span class="i-badge-gold">SATELLITE VERIFIED</span>
+          </div>
+
+          <div class="i-stat-row">
+            <div>
+              <div class="i-stat-label">PROTECTED SPECIES</div>
+              <div class="i-stat-val">148</div>
+            </div>
+            <div style="text-align: right;">
+              <div class="i-stat-label" style="color: #d64545;">ENDANGERED</div>
+              <div class="i-stat-val red">12</div>
+            </div>
+          </div>
+
+          <div class="i-progress-container">
+            <div class="i-stat-label" style="margin-bottom: 1rem;">HABITAT PRESERVATION</div>
+            <div class="i-progress-header">
+              <div class="i-progress-bar" style="width: 70%; margin-right: 1rem;">
+                <div class="i-progress-fill" style="width: 100%;"></div>
+              </div>
+              <span style="font-size: 0.85rem; font-weight: 600;">125 Ha</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Community -->
+        <div class="i-card">
+          <div class="i-card-header">
+            <div class="i-card-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Community
+            </div>
+            <span class="i-badge-blue">SOCIAL IMPACT</span>
+          </div>
+
+          <div class="i-stat-row" style="margin-bottom: 0.8rem;">
+            <div class="i-stat-label">Families Supported</div>
+            <div class="i-stat-val" style="font-size: 1rem; font-family: var(--font-sans); font-weight: 500;">34</div>
+          </div>
+          <div class="i-stat-row" style="margin-bottom: 0.8rem;">
+            <div class="i-stat-label">Schools Funded</div>
+            <div class="i-stat-val" style="font-size: 1rem; font-family: var(--font-sans); font-weight: 500;">2</div>
+          </div>
+          <div class="i-stat-row" style="margin-bottom: 1rem;">
+            <div class="i-stat-label">Local Jobs Created</div>
+            <div class="i-stat-val" style="font-size: 1rem; font-family: var(--font-sans); font-weight: 500;">18</div>
+          </div>
+
+          <button class="i-btn-outline" onclick="window.location.href='./verification.html'">VIEW SOCIAL AUDIT</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="i-col-sidebar fade-in-section slide-left">
+      
+      <div class="i-sidebar-card">
+        <div class="i-sc-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-gold)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Verification Confidence
+        </div>
+        
+        <div class="i-sc-row">
+          <span style="font-size: 0.75rem; font-family: var(--font-mono); color: #777;">STATUS</span>
+          <div class="i-sc-status">
+            <div class="i-sc-dot"></div>
+            Active Protection
+          </div>
+        </div>
+
+        <div class="i-audit-line">
+          <span style="font-size: 0.75rem; font-family: var(--font-mono); color: #777;">AUDIT COMPLETE</span>
+          <span style="font-weight: 600;">98.2%</span>
+        </div>
+
+        <div class="i-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <div class="i-meta-text">
+            <h5>Registry: Verra VCS</h5>
+            <p>Project ID: AMZ-2024-889</p>
+          </div>
+        </div>
+
+        <div class="i-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div class="i-meta-text">
+            <h5>Risk Factor: Low</h5>
+            <p>Permanence Buffer: 20% Held</p>
+          </div>
+        </div>
+
+        <div class="i-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+          <div class="i-meta-text">
+            <h5>LiDAR Scan Frequency</h5>
+            <p>Real-time daily pass via Sentinel-2</p>
+          </div>
+        </div>
+
+        <div class="i-sc-desc">
+          Investment confirms your support for these outcomes.
+        </div>
+
+        <button class="i-btn-solid" onclick="window.location.href='./summary.html'">Continue to Purchase Summary</button>
+        <a href="#" class="i-draft-link">SAVE AS DRAFT</a>
+      </div>
+
+      <div class="i-methodology-card">
+        <div class="i-mc-title">METHODOLOGY NOTE</div>
+        <div class="i-mc-text">
+          Calculations use the Canopy Science Model v4.2, aligning with IPCC Tier 3 reporting standards. Social impact metrics are verified through quarterly field surveys.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <h4><a href="./index.html" style="text-decoration: none; color: inherit; font-family: 'Playfair Display', serif; font-size: 1.6rem;">Canopy</a></h4>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise<br/>Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <a href="./methodology.html">Sustainability Methodology</a>
+      <a href="./audit.html">Audit Trails</a>
+      <a href="./registry.html">Terms of Service</a>
+      <a href="./registry.html">Security Whitepaper</a>
+      <a href="./registry.html">Carbon Registry API</a>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in-section').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <!-- Dynamic Metrics Calculations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Prevent default on all impact calculator elements
+      document.querySelectorAll('.impact-calc').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      });
+
+      // Load volume from localStorage
+      let tonnes = parseFloat(localStorage.getItem('canopy_checkout_volume'));
+      if (isNaN(tonnes)) {
+        tonnes = 500;
+      }
+
+      // Update Allocation Box
+      const allocVal = document.querySelector('.i-alloc-val');
+      if (allocVal) {
+        allocVal.textContent = Math.round(tonnes).toLocaleString();
+      }
+
+      // Update Equivalents
+      const equivItems = document.querySelectorAll('.i-equiv-item');
+      if (equivItems.length >= 4) {
+        equivItems[0].querySelector('.i-equiv-val').textContent = Math.round(tonnes * (108 / 500)).toLocaleString();
+        equivItems[1].querySelector('.i-equiv-val').textContent = Math.round(tonnes * (8250 / 500)).toLocaleString();
+        equivItems[2].querySelector('.i-equiv-val').textContent = Math.round(tonnes * (65 / 500)).toLocaleString();
+        equivItems[3].querySelector('.i-equiv-val').textContent = Math.round(tonnes * (42 / 500)).toLocaleString();
+      }
+
+      // Update Habitat Preservation (125 Ha)
+      const habitatSpan = document.querySelector('.i-progress-header span');
+      if (habitatSpan) {
+        const ha = Math.round(tonnes * 0.25);
+        habitatSpan.textContent = ha.toLocaleString() + ' Ha';
+      }
+
+      // Update Community Row Metrics
+      const statRows = document.querySelectorAll('.i-stat-row');
+      statRows.forEach(row => {
+        const label = row.querySelector('.i-stat-label');
+        const val = row.querySelector('.i-stat-val');
+        if (label && val) {
+          const txt = label.textContent.trim().toLowerCase();
+          if (txt === 'families supported') {
+            val.textContent = Math.max(1, Math.round(tonnes * (34 / 500))).toLocaleString();
+          } else if (txt === 'schools funded') {
+            val.textContent = Math.max(1, Math.round(tonnes * (2 / 500))).toLocaleString();
+          } else if (txt === 'local jobs created') {
+            val.textContent = Math.max(1, Math.round(tonnes * (18 / 500))).toLocaleString();
+          }
+        }
+      });
+    });
+  </script>
+  <script src="./contact.js"></script>
+</body>
+</html>
+

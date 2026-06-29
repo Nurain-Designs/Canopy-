@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canopy - Institutional Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./landing2.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="l2-navbar">
+    <a href="./index.html" class="l2-nav-brand" style="text-decoration: none;">Canopy</a>
+    <ul class="l2-nav-links">
+      <li><a href="./marketplace.html" class="active">Marketplace</a></li>
+      <li><a href="./dashboard.html">Dashboard</a></li>
+      <li><a href="./verification.html">Verification</a></li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./team.html">Team</a></li>
+    </ul>
+    <div class="l2-nav-actions">
+      <a href="#" class="l2-btn l2-btn-dark impact-calc">Impact Calculator</a>
+      <div class="l2-nav-icons" style="display: flex; align-items: center; gap: 1rem; margin-left: 0.5rem;">
+        <img src="/images/media__1782453860642.png" alt="Nav Icons" style="height: 36px; object-fit: contain;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="l2-hero fade-in-section">
+    <div class="l2-hero-content">
+      <p class="l2-hero-subtitle">INSTITUTIONAL CARBON CREDIT EXCHANGE</p>
+      <h1 class="l2-hero-title">Invest in Verified Forest<br />Impact</h1>
+
+      <div class="l2-search-bar">
+        <span class="l2-search-icon">🔍</span>
+        <input type="text" placeholder="Search projects by region or biome..." />
+        <button class="l2-btn l2-btn-dark l2-search-btn" onclick="window.location.href='./marketplace.html'">Explore Projects</button>
+      </div>
+
+      <div class="l2-hero-stats-bar">
+        <div class="l2-stat-group">
+          <span class="l2-stat-label">FOREST PROTECTED</span>
+          <p class="l2-stat-val">1.2M <span class="l2-stat-unit">Hectares</span></p>
+        </div>
+        <div class="l2-stat-group">
+          <span class="l2-stat-label">CARBON CREDITS</span>
+          <p class="l2-stat-val">42.8M <span class="l2-stat-unit">Verified</span></p>
+        </div>
+        <div class="l2-stat-group">
+          <span class="l2-stat-label">COMMUNITIES SUPPORTED</span>
+          <p class="l2-stat-val">850+ <span class="l2-stat-unit">Active communities</span></p>
+        </div>
+        <div class="l2-hero-cta">
+          <a href="./dashboard.html" class="l2-btn-outline">IMPACT DASHBOARD &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Logos Banner -->
+  <section class="l2-logos fade-in-section slide-left">
+    <span class="l2-logos-label">STANDARDIZED BY</span>
+    <div class="l2-logo-grid">
+      <span class="l2-brand-logo">VERRA</span>
+      <span class="l2-brand-logo">Gold Standard</span>
+      <span class="l2-brand-logo">PLAN VIVO</span>
+      <span class="l2-brand-logo">CCB Standards</span>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="l2-projects fade-in-section slide-right">
+    <div class="l2-section-header">
+      <div class="l2-header-text">
+        <span class="l2-section-label">SELECTION</span>
+        <h2>Featured High-Integrity Projects</h2>
+      </div>
+      <div class="l2-carousel-nav">
+        <button>&lt;</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+
+    <div class="l2-project-grid">
+      <!-- Card 1 -->
+      <a href="./project-details.html" style="text-decoration: none; color: inherit; display: block;">
+      <div class="l2-project-card">
+        <div class="l2-card-img">
+          <img src="/images/media__1782455553742.png" alt="River winding" onerror="this.src='/images/amazon.png'" />
+          <span class="l2-card-badge"><span class="badge-dot"></span> SATELLITE VERIFIED</span>
+        </div>
+        <div class="l2-card-body">
+          <span class="l2-card-location">AMAZON BASIN &bull; BRAZIL</span>
+          <h3>Acre REDD+ Forest Conservation</h3>
+          <div class="l2-card-metrics">
+            <div class="l2-metric">
+              <span class="l2-metric-label">BIODIVERSITY SCORE</span>
+              <span class="l2-metric-val">9.4/10</span>
+            </div>
+            <div class="l2-metric">
+              <span class="l2-metric-label">COMMUNITY IMPACT</span>
+              <span class="l2-metric-val">High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="./project-details.html" style="text-decoration: none; color: inherit; display: block;">
+      <div class="l2-project-card">
+        <div class="l2-card-img">
+          <img src="/images/media__1782455584527.png" alt="Forest top down" onerror="this.src='/images/congo.png'" />
+          <span class="l2-card-badge"><span class="badge-dot"></span> SENTINEL-2 TRACKED</span>
+        </div>
+        <div class="l2-card-body">
+          <span class="l2-card-location">CONGO BASIN &bull; DRC</span>
+          <h3>Mai Ndombe Peatland Protection</h3>
+          <div class="l2-card-metrics">
+            <div class="l2-metric">
+              <span class="l2-metric-label">BIODIVERSITY SCORE</span>
+              <span class="l2-metric-val">8.8/10</span>
+            </div>
+            <div class="l2-metric">
+              <span class="l2-metric-label">COMMUNITY IMPACT</span>
+              <span class="l2-metric-val">Exceptional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="./project-details.html" style="text-decoration: none; color: inherit; display: block;">
+      <div class="l2-project-card">
+        <div class="l2-card-img">
+          <img src="/images/media__1782455615080.png" alt="Terraced hills" onerror="this.src='/images/borneo.png'" />
+          <span class="l2-card-badge"><span class="badge-dot"></span> IMPACT VERIFIED</span>
+        </div>
+        <div class="l2-card-body">
+          <span class="l2-card-location">SOUTHEAST ASIA &bull; VIETNAM</span>
+          <h3>Son La Community Restoration</h3>
+          <div class="l2-card-metrics">
+            <div class="l2-metric">
+              <span class="l2-metric-label">BIODIVERSITY SCORE</span>
+              <span class="l2-metric-val">9.1/10</span>
+            </div>
+            <div class="l2-metric">
+              <span class="l2-metric-label">COMMUNITY IMPACT</span>
+              <span class="l2-metric-val">Direct Revenue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Community Narratives -->
+  <section class="narratives-section fade-in-section">
+    <h2 style="font-family: 'Playfair Display', serif; color: #042514; font-size: 2.5rem; margin-bottom: 4rem;">Beyond the Carbon: Community Narratives</h2>
+    <div class="narratives-grid">
+      <!-- Card 1 -->
+      <div class="narrative-card fade-in-section slide-up">
+        <div class="narrative-img-wrapper">
+          <span class="img-badge">SOCIAL CO-BENEFITS</span>
+          <img src="/images/narrative_1_1782629615952.png" alt="Community Member" />
+        </div>
+        <p class="narrative-quote">"The project didn't just plant trees; it restored our water cycle and provided long-term security for our school."</p>
+        <div class="narrative-author">
+          <strong>Elena Vargas</strong>
+          <span>COMMUNITY LEAD &bull; MADRE DE DIOS</span>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="narrative-card fade-in-section slide-up" style="margin-top: 40px;">
+        <div class="narrative-img-wrapper">
+          <span class="img-badge">BIODIVERSITY STUDY</span>
+          <img src="/images/narrative_2_1782629628197.png" alt="Ecologist" />
+        </div>
+        <p class="narrative-quote">"We've seen a 30% increase in indicator species return within only 18 months of protection."</p>
+        <div class="narrative-author">
+          <strong>Dr. Marcus Chen</strong>
+          <span>ECOLOGIST &bull; BIOME PARTNERS</span>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="narrative-card fade-in-section slide-up">
+        <div class="narrative-img-wrapper">
+          <span class="img-badge">FUTURE GENERATIONS</span>
+          <img src="/images/narrative_3_1782629642857.png" alt="Group of people" />
+        </div>
+        <p class="narrative-quote">"The forest we are planting today is the lungs of the city our children will inherit tomorrow."</p>
+        <div class="narrative-author">
+          <strong>Sarah Jenkins</strong>
+          <span>EDUCATIONAL OUTREACH</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Verification -->
+  <section class="l2-verification fade-in-section slide-left">
+    <div class="l2-verif-content">
+      <h2>Real-Time Global Verification</h2>
+      <p>Our platform integrates high-resolution satellite telemetry with on-the-ground IoT sensors to provide a
+        transparent audit trail for every credit. Browse our global hotspots to see live metrics on biomass health and
+        carbon sequestration.</p>
+
+      <div class="l2-verif-list">
+        <div class="l2-v-item">
+          <div class="l2-v-text">
+            <h4>Amazon Basin</h4>
+            <div class="l2-v-stats">
+              <span>ACTIVE PROJECTS: 14</span>
+              <span>DEFORESTATION: -12%</span>
+              <div class="l2-stat-col">
+                <span>BIOMASS: STABLE</span>
+                <button class="l2-v-btn" onclick="window.location.href='./verification.html'">&rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l2-v-item">
+          <div class="l2-v-text">
+            <h4>Congo Peatlands</h4>
+            <div class="l2-v-stats">
+              <span>ACTIVE PROJECTS: 08</span>
+              <span>DEFORESTATION: -08%</span>
+              <div class="l2-stat-col">
+                <span>BIOMASS: INCREASING</span>
+                <button class="l2-v-btn" onclick="window.location.href='./verification.html'">&rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l2-v-item">
+          <div class="l2-v-text">
+            <h4>Southeast Asian Mangroves</h4>
+            <div class="l2-v-stats">
+              <span>ACTIVE PROJECTS: 21</span>
+              <span>DEFORESTATION: -15%</span>
+              <div class="l2-stat-col">
+                <span>BIOMASS: CRITICAL<br />RESTORATION</span>
+                <button class="l2-v-btn" onclick="window.location.href='./verification.html'">&rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l2-verif-visual">
+      <img src="/images/globe_verification.png" alt="Global Verification" />
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="l2-timeline fade-in-section slide-right">
+    <span class="l2-timeline-label">OUR IMPACT STORY</span>
+    <h2>The Timeline of Recovery</h2>
+
+    <div class="l2-time-path">
+      <div class="l2-time-node right-img fade-in-section slide-left">
+        <div class="l2-node-content">
+          <span class="l2-node-year">2024 &bull; BASELINE</span>
+          <h3>Degraded Landscape</h3>
+          <p>Before canopy involvement, this region suffered from illegal logging and nutrient-depleted soil. Our
+            satellite data showed a 40% loss in canopy cover over five years.</p>
+        </div>
+        <div class="l2-node-img">
+          <img src="/images/timeline_degraded_real.png" alt="Degraded Landscape" />
+        </div>
+      </div>
+
+      <div class="l2-time-node left-img fade-in-section slide-right">
+        <div class="l2-node-img">
+          <img src="/images/timeline_community_real.jpg" alt="Community Led Growth" />
+        </div>
+        <div class="l2-node-content">
+          <span class="l2-node-year">2025 &bull; INTERVENTION</span>
+          <h3>Community-Led Growth</h3>
+          <p>In partnership with local tribes, we planted over 2 million indigenous saplings. Verified employment
+            records show 300+ families gained sustainable livelihoods.</p>
+        </div>
+      </div>
+
+      <div class="l2-time-node right-img fade-in-section slide-left">
+        <div class="l2-node-content">
+          <span class="l2-node-year">TODAY &bull; VERIFIED SUCCESS</span>
+          <h3>Regenerated Ecosystem</h3>
+          <p>Today, the canopy has closed. Wildlife cameras have captured the return of 3 endangered species. The
+            project now generates 150,000 verified carbon credits annually.</p>
+        </div>
+        <div class="l2-node-img l2-node-img--framed">
+          <img src="/images/timeline_verified_real.jpg" alt="Regenerated Ecosystem" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="l2-cta fade-in-section slide-left">
+    <div class="l2-cta-content">
+      <h2>Ready to lead the net-zero<br />transition?</h2>
+      <p>Join institutional investors already securing their carbon future through Canopy's verified project pipeline.
+      </p>
+      <div class="l2-cta-buttons">
+        <button class="l2-btn l2-btn-light" onclick="window.location.href='./marketplace.html'">Request Corporate Access</button>
+        <button class="l2-btn l2-btn-outline-dark">View Methodology</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="l2-footer">
+    <div class="l2-f-left">
+      <h4><a href="./index.html"
+          style="text-decoration: none; color: inherit; font-family: 'Playfair Display', serif; font-size: 1.6rem;">Canopy</a>
+      </h4>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise<br />Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <a href="./methodology.html">Sustainability Methodology</a>
+      <a href="./audit.html">Audit Trails</a>
+      <a href="./registry.html">Terms of Service</a>
+      <a href="./registry.html">Security Whitepaper</a>
+      <a href="./registry.html">Carbon Registry API</a>
+    </div>
+  </footer>
+
+  <script src="./landing2.js"></script>
+  <script src="./contact.js"></script>
+</body>
+
+</html>

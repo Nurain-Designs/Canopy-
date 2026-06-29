@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="l2-navbar fade-in-section slide-down">
+    <a href="./index.html" class="l2-nav-brand" style="text-decoration: none;">Canopy</a>
+    <ul class="l2-nav-links">
+      <li><a href="./marketplace.html">Marketplace</a></li>
+      <li><a href="./dashboard.html">Dashboard</a></li>
+      <li><a href="./verification.html">Verification</a></li>
+      <li><a href="./portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="./team.html">Team</a></li>
+    </ul>
+    <div class="l2-nav-actions">
+      <a href="#" class="l2-btn l2-btn-dark impact-calc">Impact Calculator</a>
+      <div class="l2-nav-icons" style="display: flex; align-items: center; gap: 1rem; margin-left: 0.5rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width:20px;height:20px;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width:20px;height:20px;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <img src="/images/guardian_portrait.png" alt="Profile" style="width:32px;height:32px;border-radius:50%;object-fit:cover;border:1px solid #ccc;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="portfolio-hero fade-in-section slide-up">
+    <div class="hero-content">
+      <div class="hero-left">
+        <span class="hero-subtitle">PUBLIC CLIMATE PORTFOLIO 2026</span>
+        <h1 class="hero-title">Quantifying Stewardship: A Transparent Path to Net-Positive.</h1>
+        <p class="hero-desc">Canopy leverages hyper-spectral satellite imagery and blockchain-verified audit trails to ensure every ton of carbon sequestered is real, permanent, and additional. Explore our institutional-grade climate commitments.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-dark">Download 2026 Report</button>
+          <button class="btn btn-outline">Verify Certificates</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stats-container">
+          <div class="stat-row">
+            <div class="stat-info">
+              <span class="stat-label">TOTAL IMPACT SEQUESTERED</span>
+              <span class="stat-val"><span class="count-up" data-target="142.8" data-format="k">0</span>k <span class="stat-unit">tCO2e</span></span>
+            </div>
+            <div class="stat-icon icon-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-info">
+              <span class="stat-label">ECOSYSTEMS PROTECTED</span>
+              <span class="stat-val"><span class="count-up" data-target="12400" data-format="number">0</span> <span class="stat-unit">Hectares</span></span>
+            </div>
+            <div class="stat-icon icon-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 15H3L12 3z"/></svg></div>
+          </div>
+          <div class="stat-row no-border">
+            <div class="stat-info">
+              <span class="stat-label">COMMUNITY REINVESTMENT</span>
+              <span class="stat-val">$<span class="count-up" data-target="4.2" data-format="million-plain">0</span>M <span class="stat-unit">USD</span></span>
+            </div>
+            <div class="stat-icon icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2" ry="2"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Community Narratives -->
+  <section class="narratives-section fade-in-section slide-up">
+    <h2>Beyond the Carbon: Community Narratives</h2>
+    <div class="narratives-grid">
+      <div class="narrative-card fade-in-section slide-left">
+        <div class="narrative-img-wrapper">
+          <img src="/images/narrative_1_figma.png" alt="Elena Vargas">
+          <span class="img-badge">SOCIAL CO-BENEFITS</span>
+        </div>
+        <p class="narrative-quote">"The project didn't just plant trees; it restored our water cycle and provided long-term security for our school."</p>
+        <div class="narrative-author">
+          <strong>Elena Vargas</strong>
+          <span>COMMUNITY LEAD &middot; MADRE DE DIOS</span>
+        </div>
+      </div>
+      <div class="narrative-card staggered fade-in-section slide-up">
+        <div class="narrative-img-wrapper">
+          <img src="/images/narrative_2_figma.png" alt="Dr. Marcus Chen">
+          <span class="img-badge">BIODIVERSITY STUDY</span>
+        </div>
+        <p class="narrative-quote">"We've seen a 30% increase in indicator species return within only 18 months of protection."</p>
+        <div class="narrative-author">
+          <strong>Dr. Marcus Chen</strong>
+          <span>ECOLOGIST &middot; BIOME PARTNERS</span>
+        </div>
+      </div>
+      <div class="narrative-card fade-in-section slide-right">
+        <div class="narrative-img-wrapper">
+          <img src="/images/narrative_3_figma.png" alt="Sarah Jenkins">
+          <span class="img-badge">FUTURE GENERATIONS</span>
+        </div>
+        <p class="narrative-quote">"The forest we are planting today is the lungs of the city our children will inherit tomorrow."</p>
+        <div class="narrative-author">
+          <strong>Sarah Jenkins</strong>
+          <span>EDUCATIONAL OUTREACH</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funded Projects -->
+  <section class="projects-section fade-in-section slide-up">
+    <div class="projects-header">
+      <div class="projects-title-block">
+        <h2>Funded Projects</h2>
+        <p>A scientific portfolio of high-integrity reforestation and conservation initiatives across global biomes.</p>
+      </div>
+      <div class="projects-nav">
+        <button>&lt;</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <a href="./project-details.html" style="text-decoration: none; color: inherit; display: block;">
+      <div class="project-card large fade-in-section slide-left">
+        <img src="/images/project_1.png" alt="Amazonia">
+        <div class="project-card-overlay">
+          <div class="project-badges">
+            <span class="badge-gold">VERIFIED GOLD</span>
+            <span>BRAZIL &bull; REFORESTATION</span>
+          </div>
+          <h3>Amazonia Restoration Cluster</h3>
+          <p>Restoring 4,500 hectares of critical wildlife corridor through indigenous-led agroforestry techniques.</p>
+          <hr>
+          <div class="project-stats">
+            <div>
+              <span class="ps-val">24.5k</span>
+              <span class="ps-label">TONS SEQUESTERED</span>
+            </div>
+            <div>
+              <span class="ps-val">98.2%</span>
+              <span class="ps-label">SURVIVAL RATE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+      <div class="project-card fade-in-section slide-right">
+        <img src="/images/project_2.png" alt="Cascadia">
+        <div class="project-card-overlay">
+          <div class="project-badges">
+            <span class="badge-light">CASE STUDY</span>
+          </div>
+          <h3>Cascadia Old Growth</h3>
+          <p>Preservation of legacy carbon stocks in the Olympic Peninsula.</p>
+          <hr>
+          <a href="./project-details.html" class="view-link">VIEW PROJECT DATA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutional Journey -->
+  <section class="journey-section fade-in-section slide-up">
+    <h2>Institutional Journey</h2>
+    <p class="journey-desc">Our path toward a net-positive future is mapped through rigorous milestones and transparent progress reporting.</p>
+    
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      
+      <div class="timeline-row fade-in-section slide-left">
+        <div class="timeline-content right-align">
+          <span class="timeline-badge badge-green">2025 &middot; INCEPTION</span>
+          <h3>Baseline Establishment</h3>
+          <p>Completed full Scope 1-3 audit across global operations, setting our first science-based targets for 2030.</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-image">
+          <img src="/images/journey_1_figma.png" alt="Forest canopy">
+        </div>
+      </div>
+      
+      <div class="timeline-row reverse fade-in-section slide-right">
+        <div class="timeline-image">
+          <img src="/images/journey_2_figma.png" alt="Terrain">
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content left-align">
+          <span class="timeline-badge badge-yellow">2026 &middot; MILESTONE</span>
+          <h3>100k Tons Milestone</h3>
+          <p>Achievement of 100,000 metric tons of verified carbon sequestration through the Canopy satellite verification network.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-row fade-in-section slide-left">
+        <div class="timeline-content right-align">
+          <span class="timeline-badge badge-green">2030 &middot; COMMITMENT</span>
+          <h3>Carbon Negative Status</h3>
+          <p>Target date for achieving net-negative operational impact, removing 2x more carbon than emitted annually.</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-image">
+          <img src="/images/journey_3_figma.png" alt="Misty forest">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Radical Transparency -->
+  <section class="transparency-section fade-in-section slide-up">
+    <div class="transparency-container">
+      <div class="trans-content">
+        <span class="trans-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          PUBLIC AUDIT TRAIL
+        </span>
+        <h2>Radical Transparency in Verification.</h2>
+        <p>Every credit in this portfolio is retired in the public interest. We provide direct API access to our retirement certificates and the underlying satellite raw data for independent verification.</p>
+        
+        <div class="trans-download-list">
+          <a href="#" class="trans-download-btn">
+            <div class="tdb-left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <div class="tdb-middle">
+              <span class="tdb-title">Certificate #VER-2026-001</span>
+              <span class="tdb-subtitle">VERRA REGISTERED &middot; 12.04.2026</span>
+            </div>
+            <div class="tdb-right">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+          </a>
+          <a href="#" class="trans-download-btn">
+            <div class="tdb-left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="9" y2="17"></line><line x1="15" y1="13" x2="15" y2="17"></line><line x1="12" y1="5" x2="12" y2="17"></line></svg>
+            </div>
+            <div class="tdb-middle">
+              <span class="tdb-title">Satellite Biomass Scan Log</span>
+              <span class="tdb-subtitle">LIDAR VERIFIED &middot; 08.02.2026</span>
+            </div>
+            <div class="tdb-right">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="trans-terminal">
+        <div class="terminal-header">
+          <span class="terminal-title">Registry API</span>
+          <span class="terminal-badge">LIVE STATUS</span>
+        </div>
+        <span class="terminal-action">QUERYING LEDGER...</span>
+        <div class="terminal-body">
+          <pre><code>GET /api/v1/certificates/active
+{
+  "portfolio_id": "CNP-9812",
+  "status": "RETIRED",
+  "verification": "SATELLITE_LIDAR",
+  "total_volume": 142800
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <a href="./index.html" class="footer-logo" style="text-decoration:none; color:inherit; font-family:'Playfair Display', serif; font-size:1.6rem;">Canopy</a>
+      <p>&copy; 2026 Canopy. All rights reserved.<br/>Precise Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-right">
+      <div class="footer-nav">
+        <div class="footer-links-top">
+          <a href="./methodology.html">Sustainability Methodology</a>
+          <a href="./audit.html">Audit Trails</a>
+          <a href="./registry.html">Terms of Service</a>
+          <a href="./registry.html">Security Whitepaper</a>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="./registry.html">Carbon Registry API</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </a>
+        <a href="#" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Scroll entrance animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+      // Hero: Download 2026 Report
+      const heroButtons = document.querySelectorAll('.hero-buttons .btn');
+      if (heroButtons.length >= 1) {
+        heroButtons[0].addEventListener('click', () => {
+          alert('Downloading 2026 Climate Impact Report...\nFile: canopy-climate-portfolio-2026.pdf\nPages: 148 | Verified: LIDAR + Blockchain\n\nDownload Complete.');
+        });
+      }
+
+      // Hero: Verify Certificates
+      if (heroButtons.length >= 2) {
+        heroButtons[1].addEventListener('click', () => {
+          window.location.href = './verification.html';
+        });
+      }
+
+      // Transparency: Certificate downloads
+      const downloadBtns = document.querySelectorAll('.trans-download-btn');
+      if (downloadBtns.length >= 1) {
+        downloadBtns[0].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Downloading Certificate...\nFile: certificate-VER-2026-001.pdf\nRegistry: VERRA | Date: 12.04.2026\nVolume: 12,400 tCO2e retired\n\nSignature Verified ✓\nDownload Complete.');
+        });
+      }
+      if (downloadBtns.length >= 2) {
+        downloadBtns[1].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Downloading Satellite Biomass Scan Log...\nFile: biomass-scan-log-LIDAR-08022026.csv\nLIDAR Verified | Sentinel-2 Data\nResolution: 10m/pixel | Confidence: 98.7%\n\nDownload Complete.');
+        });
+      }
+
+      // Footer social buttons
+      const footerSocials = document.querySelectorAll('.footer-socials .social-btn');
+      if (footerSocials.length >= 1) {
+        footerSocials[0].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Opening Canopy Global Network Hub...');
+          window.location.href = './index.html';
+        });
+      }
+      if (footerSocials.length >= 2) {
+        footerSocials[1].addEventListener('click', (e) => {
+          e.preventDefault();
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            alert('Portfolio link copied to clipboard!');
+          }).catch(() => {
+            alert(`Share this URL: ${window.location.href}`);
+          });
+        });
+      }
+    });
+  </script>
+  <script src="./landing2.js"></script>
+  <script src="./contact.js"></script>
+</body>
+</html>

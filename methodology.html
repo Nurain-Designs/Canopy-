@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy - Methodology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./registry.css">
+  <style>
+    .page-content { max-width:1200px; margin:0 auto; padding:3rem 5%; display:flex; flex-direction:column; gap:3rem; }
+    .hero-badge { background:rgba(12,43,29,0.08); color:#0c2b1d; border:1px solid rgba(12,43,29,0.2); padding:.35rem .75rem; font-size:.75rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; border-radius:40px; display:inline-block; }
+    .method-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+    .method-card { background:#fff; border:1px solid rgba(12,43,29,0.1); border-radius:14px; padding:2rem; transition:transform .25s; }
+    .method-card:hover { transform:translateY(-4px); }
+    .method-icon { width:48px; height:48px; background:rgba(12,43,29,0.08); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:1rem; }
+    .method-icon svg { width:24px; height:24px; color:#0c2b1d; }
+    .method-card h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:#0c2b1d; margin-bottom:.5rem; }
+    .method-card p { font-size:.85rem; color:#666; line-height:1.6; margin-bottom:1rem; }
+    .method-steps { list-style:none; padding:0; display:flex; flex-direction:column; gap:.5rem; }
+    .method-steps li { font-size:.8rem; color:#555; display:flex; align-items:flex-start; gap:.5rem; }
+    .method-steps li::before { content:"→"; color:#0c2b1d; font-weight:600; flex-shrink:0; }
+    .equation-block { background:#0c2b1d; border-radius:12px; padding:2rem; color:#fff; }
+    .equation-block h2 { font-family:'Playfair Display',serif; font-size:1.6rem; margin-bottom:1rem; }
+    .eq { font-family:monospace; font-size:1rem; background:rgba(255,255,255,.1); padding:1rem 1.5rem; border-radius:8px; margin-bottom:1rem; line-height:1.8; }
+    .eq-label { font-size:.75rem; color:rgba(255,255,255,.6); letter-spacing:.5px; text-transform:uppercase; margin-top:.5rem; }
+    .equation-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    @media(max-width:640px){ .equation-grid { grid-template-columns:1fr; } }
+    .standard-badges { display:flex; flex-wrap:wrap; gap:1rem; }
+    .std-badge { background:#fff; border:1px solid rgba(12,43,29,0.2); border-radius:10px; padding:1rem 1.5rem; display:flex; flex-direction:column; gap:.25rem; min-width:180px; }
+    .std-badge .name { font-weight:600; color:#0c2b1d; font-size:.9rem; }
+    .std-badge .desc { font-size:.75rem; color:#666; }
+    .section-title { font-family:'Playfair Display',serif; font-size:1.8rem; color:#0c2b1d; margin-bottom:1.5rem; }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-solid" onclick="window.location.href='./marketplace.html'">Explore Terrain</button>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <header style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:1rem;">
+      <div class="hero-badge">Science-Based Methodology</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.8rem;color:#0c2b1d;font-weight:500;max-width:800px;">Carbon Sequestration Methodology</h1>
+      <p style="color:#666;font-size:1.05rem;max-width:620px;line-height:1.6;">Canopy's carbon accounting methodology is built on peer-reviewed science, regulatory compliance, and continuous satellite telemetry. Every tonne we certify is defensible.</p>
+    </header>
+
+    <!-- Methodology Cards -->
+    <section>
+      <h2 class="section-title">Core Methodology Pillars</h2>
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg></div>
+          <h3>Baseline Assessment</h3>
+          <p>We establish a dynamic project baseline measuring what emissions would have occurred without the project using a counterfactual deforestation model.</p>
+          <ul class="method-steps">
+            <li>Landsat-8 historical deforestation rate analysis</li>
+            <li>Regional pressure mapping (agricultural frontier modeling)</li>
+            <li>Benchmark comparison with reference zones</li>
+            <li>IPCC Tier 3 emission factor calibration</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <div class="method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+          <h3>Real-Time Monitoring</h3>
+          <p>Canopy's satellite stack continuously monitors forest cover changes using SAR, multispectral, and LIDAR fusion with 3m spatial resolution.</p>
+          <ul class="method-steps">
+            <li>Monthly Sentinel-2 multispectral passes</li>
+            <li>Bi-annual LIDAR canopy density scans</li>
+            <li>Real-time SAR deforestation alert triggers</li>
+            <li>Ground-truth validation transects every 6 months</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <div class="method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4z"></path></svg></div>
+          <h3>Additionality Proof</h3>
+          <p>All projects must demonstrate they would not have been financially viable without carbon revenue — ensuring every credit represents genuine new protection.</p>
+          <ul class="method-steps">
+            <li>Financial additionality barrier analysis</li>
+            <li>Regulatory surplus test against national laws</li>
+            <li>Absence of performance requirements test</li>
+            <li>Common practice test vs. regional norms</li>
+          </ul>
+        </div>
+        <div class="method-card">
+          <div class="method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+          <h3>Permanence & Buffer Pool</h3>
+          <p>A minimum 15% buffer pool is maintained per project to insure against unforeseen carbon losses from wildfire, disease, or illegal encroachment.</p>
+          <ul class="method-steps">
+            <li>15% buffer credit pool per project</li>
+            <li>Dynamic risk-weighted buffer adjustment</li>
+            <li>Permanent loss protocol for catastrophic events</li>
+            <li>Registry invalidation and replacement pathway</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carbon Equations -->
+    <section class="equation-block">
+      <h2>Sequestration Calculation Framework</h2>
+      <p style="color:rgba(255,255,255,.7);margin-bottom:1.5rem;font-size:.9rem;">The following equations represent the core carbon accounting formulas we apply to every registered asset.</p>
+      <div class="equation-grid">
+        <div>
+          <div class="eq">ER = BL<sub>emissions</sub> − PL<sub>emissions</sub> − LK</div>
+          <div class="eq-label">ER = Emission Reductions | BL = Baseline | PL = Project Level | LK = Leakage</div>
+        </div>
+        <div>
+          <div class="eq">C<sub>stock</sub> = AGB + BGB + DW + LT + SOC</div>
+          <div class="eq-label">Carbon stock pools: Above/Belowground, Dead Wood, Litter, Soil Organic Carbon</div>
+        </div>
+        <div>
+          <div class="eq">AGB = BA × H × ρ × CF × BEF</div>
+          <div class="eq-label">Above-ground biomass: Basal Area × Height × Wood Density × Carbon Fraction × Expansion</div>
+        </div>
+        <div>
+          <div class="eq">Leakage = α × (DR<sub>ref</sub> × C<sub>leakage belt</sub>)</div>
+          <div class="eq-label">Estimated displacement emissions outside project boundary</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standards Compliance -->
+    <section>
+      <h2 class="section-title">Standards Compliance</h2>
+      <div class="standard-badges">
+        <div class="std-badge"><div class="name">VCS VM0015</div><div class="desc">Avoided Unplanned Deforestation — Verra</div></div>
+        <div class="std-badge"><div class="name">Gold Standard</div><div class="desc">Biodiversity & Co-Benefits Framework</div></div>
+        <div class="std-badge"><div class="name">ISO 14064-2</div><div class="desc">GHG Project-Level Quantification</div></div>
+        <div class="std-badge"><div class="name">IPCC AR6</div><div class="desc">Tier 3 Emission Factor Tables</div></div>
+        <div class="std-badge"><div class="name">Plan Vivo</div><div class="desc">Smallholder & Community Carbon Standard</div></div>
+        <div class="std-badge"><div class="name">SOCIALCARBON®</div><div class="desc">Community Co-Benefit Certification</div></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="l2-footer">
+    <div class="l2-f-left"><h4><a href="./index.html">Canopy</a></h4><p>&copy; 2026 Canopy Global. All rights reserved.</p></div>
+    <div class="l2-f-links">
+      <div><a href="./sustainability.html">Sustainability Resources</a><a href="./audit.html">Audit Transparency</a><a href="./methodology.html">Methodology</a></div>
+      <div><a href="./registry.html">Registry</a><a href="./privacy.html">Privacy Policy</a><a href="#">Contact</a></div>
+    </div>
+  </footer>
+</div>
+<script src="./landing2.js"></script>
+<script src="./contact.js"></script>
+</body>
+</html>

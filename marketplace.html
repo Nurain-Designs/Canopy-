@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy Marketplace</title>
+  <link rel="stylesheet" href="./marketplace.css">
+</head>
+<body>
+  <div class="page-wrapper">
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    
+    <div class="l2-nav-links">
+      <a href="./marketplace.html" class="active">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+
+    <div class="l2-nav-actions">
+      <div class="mp-search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="Search projects...">
+      </div>
+      <button class="l2-btn impact-calc">Impact Calculator</button>
+      <div class="l2-nav-icons" style="display: flex; align-items: center; margin-left: 0.5rem;">
+        <img src="/images/media__1782453860642.png" alt="Nav Icons" style="height: 36px; object-fit: contain;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Marketplace Layout -->
+  <div class="mp-container">
+    
+    <!-- Map Section -->
+    <div class="mp-map-section fade-in-section slide-right">
+      <img src="/images/map_background.jpg" alt="Map View" class="mp-map-img">
+    </div>
+
+    <!-- Projects Section -->
+    <div class="mp-projects-section">
+      <div class="mp-header fade-in-section">
+        <h1>Project Marketplace</h1>
+        <div class="mp-sort">
+          <span>Sort by:</span> <strong id="sort-label">Latest Vintage</strong>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+      </div>
+
+      <div class="mp-filters fade-in-section">
+        <button class="mp-filter-chip active">
+          Region: Amazon
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <select class="mp-filter-chip">
+          <option value="" disabled selected>Forest Type</option>
+          <option value="tropical">Tropical</option>
+          <option value="temperate">Temperate</option>
+          <option value="boreal">Boreal</option>
+        </select>
+        <select class="mp-filter-chip">
+          <option value="" disabled selected>Verification</option>
+          <option value="verra">Verra</option>
+          <option value="gold-standard">Gold Standard</option>
+          <option value="plan-vivo">Plan Vivo</option>
+        </select>
+        <select class="mp-filter-chip">
+          <option value="" disabled selected>Biodiversity</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select class="mp-filter-chip">
+          <option value="" disabled selected>Price Range</option>
+          <option value="under-10">Under $10</option>
+          <option value="10-20">$10 - $20</option>
+          <option value="over-20">Over $20</option>
+        </select>
+        <select class="mp-filter-chip">
+          <option value="" disabled selected>Carbon Vintage</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+
+      <div class="mp-projects-list">
+        
+        <!-- Project Card 1 -->
+        <a href="./project-details.html" style="text-decoration: none; color: inherit; display: contents;">
+          <div class="mp-project-card fade-in-section slide-left">
+            <img src="/images/project_verra.png" alt="Verra Registered Project">
+            <div class="mp-3d-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              3D Satellite View
+            </div>
+            <div class="mp-view-overlay">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              <span>Click to Explore Terrain</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project Card 2 -->
+        <a href="./project-details.html" style="text-decoration: none; color: inherit; display: contents;">
+          <div class="mp-project-card fade-in-section slide-right">
+            <img src="/images/project_gold.png" alt="Gold Standard Project">
+            <div class="mp-3d-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              3D Satellite View
+            </div>
+            <div class="mp-view-overlay">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+              <span>Click to Explore Terrain</span>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section">
+    <div class="l2-f-left">
+      <h4><a href="./index.html" style="text-decoration: none; color: inherit; font-family: 'Playfair Display', serif; font-size: 1.6rem;">Canopy</a></h4>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise<br/>Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <a href="./methodology.html">Sustainability Methodology</a>
+      <a href="./audit.html">Audit Trails</a>
+      <a href="./registry.html">Terms of Service</a>
+      <a href="./registry.html">Carbon Registry API</a>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="mp-toast fade-in-section slide-left">
+    <div class="mp-toast-icon">!</div>
+    <div class="mp-toast-content">
+      <h5>Live Update</h5>
+      <p>2,400 tonnes just retired in Mato Grosso.</p>
+    </div>
+    <button class="mp-toast-close">&times;</button>
+  </div>
+
+  </div> <!-- End page-wrapper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sort toggle
+      let sortAsc = true;
+      const sortBtn = document.querySelector('.mp-sort');
+      const sortLabel = document.getElementById('sort-label');
+      const projectList = document.querySelector('.mp-projects-list');
+      if (sortBtn) {
+        sortBtn.style.cursor = 'pointer';
+        sortBtn.addEventListener('click', () => {
+          sortAsc = !sortAsc;
+          sortLabel.textContent = sortAsc ? 'Latest Vintage' : 'Highest Price';
+          const cards = Array.from(projectList.children);
+          cards.reverse().forEach(c => projectList.appendChild(c));
+        });
+      }
+
+      // Filter chips
+      document.querySelectorAll('.mp-filter-chip').forEach(chip => {
+        if (chip.tagName === 'BUTTON') {
+          chip.addEventListener('click', () => {
+            chip.classList.toggle('active');
+          });
+        }
+        if (chip.tagName === 'SELECT') {
+          chip.addEventListener('change', () => {
+            alert(`Filter applied: ${chip.value}`);
+          });
+        }
+      });
+
+      // Toast close
+      const toastClose = document.querySelector('.mp-toast-close');
+      if (toastClose) {
+        toastClose.addEventListener('click', () => {
+          document.querySelector('.mp-toast').style.display = 'none';
+        });
+      }
+    });
+  </script>
+  <script src="./landing2.js"></script>
+  <script src="./contact.js"></script>
+</body>
+</html>
+

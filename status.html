@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy - Verification Status</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./registry.css">
+  <style>
+    .page-content { max-width:1200px; margin:0 auto; padding:3rem 5%; display:flex; flex-direction:column; gap:3rem; }
+    .hero-badge { background:rgba(12,43,29,0.08); color:#0c2b1d; border:1px solid rgba(12,43,29,0.2); padding:.35rem .75rem; font-size:.75rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; border-radius:40px; display:inline-block; }
+    /* Status Dashboard */
+    .status-hero { background:#0c2b1d; border-radius:16px; padding:3rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem; }
+    .status-hero-left h2 { font-family:'Playfair Display',serif; font-size:2rem; color:#fff; margin-bottom:.5rem; }
+    .status-hero-left p { color:rgba(255,255,255,.65); font-size:.9rem; max-width:450px; line-height:1.7; }
+    .live-badge { display:inline-flex; align-items:center; gap:.5rem; background:rgba(52,211,153,.15); border:1px solid rgba(52,211,153,.3); color:#34d399; padding:.4rem .85rem; border-radius:20px; font-size:.8rem; font-weight:600; letter-spacing:.5px; text-transform:uppercase; }
+    .live-dot { width:8px; height:8px; border-radius:50%; background:#34d399; animation:pulse 1.5s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .status-metrics { display:flex; gap:2rem; flex-wrap:wrap; }
+    .status-metric { text-align:center; }
+    .status-metric .val { font-family:'Playfair Display',serif; font-size:2.2rem; color:#fff; font-weight:600; }
+    .status-metric .lbl { font-size:.7rem; color:rgba(255,255,255,.5); letter-spacing:.8px; text-transform:uppercase; }
+
+    /* System Status Grid */
+    .system-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
+    .system-card { background:#fff; border:1px solid rgba(12,43,29,0.1); border-radius:12px; padding:1.75rem; }
+    .system-card-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+    .system-card h3 { font-family:'Playfair Display',serif; font-size:1.1rem; color:#0c2b1d; }
+    .status-pill { font-size:.7rem; font-weight:700; letter-spacing:.5px; text-transform:uppercase; padding:.3rem .65rem; border-radius:20px; }
+    .status-pill.operational { background:rgba(52,211,153,.1); color:#059669; border:1px solid rgba(52,211,153,.3); }
+    .status-pill.degraded { background:#fef3c7; color:#92400e; border:1px solid #fde68a; }
+    .system-desc { font-size:.83rem; color:#666; line-height:1.6; margin-bottom:1rem; }
+    .system-uptime { display:flex; align-items:center; gap:.5rem; font-size:.78rem; color:#0c2b1d; font-weight:600; }
+    .uptime-bars { display:flex; gap:2px; }
+    .uptime-bar { width:6px; height:24px; border-radius:3px; background:#0c2b1d; opacity:.9; }
+    .uptime-bar.down { background:#fca5a5; opacity:.6; }
+
+    /* Compliance Table */
+    .compliance-table { background:#fff; border:1px solid rgba(12,43,29,0.1); border-radius:12px; overflow:hidden; }
+    .compliance-table table { width:100%; border-collapse:collapse; }
+    .compliance-table th { background:#f9fafb; padding:1rem 1.5rem; font-size:.75rem; font-weight:600; color:#666; text-transform:uppercase; letter-spacing:.5px; border-bottom:1px solid rgba(12,43,29,.1); text-align:left; }
+    .compliance-table td { padding:1.25rem 1.5rem; font-size:.85rem; color:#333; border-bottom:1px solid rgba(12,43,29,.06); }
+    .compliance-table tr:last-child td { border-bottom:none; }
+    .check { color:#059669; font-size:1.1rem; }
+    .warn { color:#d97706; font-size:1.1rem; }
+    .section-title { font-family:'Playfair Display',serif; font-size:1.8rem; color:#0c2b1d; margin-bottom:1.5rem; }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-solid" onclick="window.location.href='./marketplace.html'">Explore Terrain</button>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <header style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:1rem;">
+      <div class="hero-badge">Live System Status</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.8rem;color:#0c2b1d;font-weight:500;max-width:800px;">Verification Status Dashboard</h1>
+      <p style="color:#666;font-size:1.05rem;max-width:620px;line-height:1.6;">Real-time status of Canopy's satellite telemetry constellation, regulatory compliance certifications, and registry node health.</p>
+    </header>
+
+    <!-- Hero Status Panel -->
+    <section class="status-hero">
+      <div class="status-hero-left">
+        <div class="live-badge"><span class="live-dot"></span>All Systems Operational</div>
+        <h2 style="margin-top:.75rem;">🔒 Satellite Synced<br/>🛡️ ISO 14064 Compliant</h2>
+        <p>Canopy's verification constellation is fully synchronized. 14 sentinel nodes are actively monitoring and reporting. Last platform sync: 3 minutes ago.</p>
+      </div>
+      <div class="status-metrics">
+        <div class="status-metric"><div class="val count-up" data-target="14" data-format="number">0</div><div class="lbl">Active Nodes</div></div>
+        <div class="status-metric"><div class="val count-up" data-target="99.8" data-format="percent">0%</div><div class="lbl">Uptime</div></div>
+        <div class="status-metric"><div class="val count-up" data-target="3" data-format="number">0</div><div class="lbl">Minutes Since Sync</div></div>
+      </div>
+    </section>
+
+    <!-- System Status Cards -->
+    <section>
+      <h2 class="section-title">System Component Health</h2>
+      <div class="system-grid">
+        <div class="system-card">
+          <div class="system-card-top"><h3>🛰️ SAR Satellite Constellation</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">Synthetic Aperture Radar passes operational across all 6 monitored biomes. Change detection latency under 4 hours.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(14).fill('<div class="uptime-bar"></div>').join('')}</div>99.8% uptime (30d)</div>
+        </div>
+        <div class="system-card">
+          <div class="system-card-top"><h3>🌿 Sentinel-2 Multispectral</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">ESA Sentinel-2 spectral imagery processing pipeline running normally. NDVI, EVI, and LAI indices refreshed monthly.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(13).fill('<div class="uptime-bar"></div>').join('')}<div class="uptime-bar down"></div></div>98.9% uptime (30d)</div>
+        </div>
+        <div class="system-card">
+          <div class="system-card-top"><h3>⛓️ Registry Blockchain Nodes</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">14 distributed ledger nodes fully synced. Transaction confirmation time averaging 2.4 seconds. No orphaned blocks detected.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(14).fill('<div class="uptime-bar"></div>').join('')}</div>100% uptime (30d)</div>
+        </div>
+        <div class="system-card">
+          <div class="system-card-top"><h3>📡 Ground-Truth API</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">Real-time ranger-reported field observation endpoints and soil sensor telemetry feeds are responding within SLA.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(13).fill('<div class="uptime-bar"></div>').join('')}<div class="uptime-bar down"></div></div>97.4% uptime (30d)</div>
+        </div>
+        <div class="system-card">
+          <div class="system-card-top"><h3>📊 ESG Reporting Engine</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">GRI, CDP, TCFD, and CSRD report generation modules operating within normal parameters. PDF export queue nominal.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(14).fill('<div class="uptime-bar"></div>').join('')}</div>99.9% uptime (30d)</div>
+        </div>
+        <div class="system-card">
+          <div class="system-card-top"><h3>🔐 KYC / AML Gateway</h3><span class="status-pill operational">Operational</span></div>
+          <p class="system-desc">Identity verification and anti-money laundering screening gateway fully operational. Average check time: 38 seconds.</p>
+          <div class="system-uptime"><div class="uptime-bars">${Array(14).fill('<div class="uptime-bar"></div>').join('')}</div>99.7% uptime (30d)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance Certifications Table -->
+    <section>
+      <h2 class="section-title">Active Compliance Certifications</h2>
+      <div class="compliance-table">
+        <table>
+          <thead><tr><th>Standard / Regulation</th><th>Scope</th><th>Status</th><th>Valid Until</th></tr></thead>
+          <tbody>
+            <tr><td><strong>ISO 14064-2:2019</strong></td><td>GHG Project Quantification & Verification</td><td><span class="check">✅ Compliant</span></td><td>Dec 2025</td></tr>
+            <tr><td><strong>Verra VCS</strong></td><td>Verified Carbon Standard Registry</td><td><span class="check">✅ Compliant</span></td><td>Mar 2026</td></tr>
+            <tr><td><strong>Gold Standard</strong></td><td>SDG Co-Benefit Certification</td><td><span class="check">✅ Compliant</span></td><td>Jun 2026</td></tr>
+            <tr><td><strong>GDPR (EU) 2016/679</strong></td><td>Personal Data Processing</td><td><span class="check">✅ Compliant</span></td><td>Ongoing</td></tr>
+            <tr><td><strong>PDPA (Singapore)</strong></td><td>Data Protection Framework</td><td><span class="check">✅ Compliant</span></td><td>Ongoing</td></tr>
+            <tr><td><strong>EUDR (EU) 2023/1115</strong></td><td>EU Deforestation Regulation</td><td><span class="warn">⚠️ In Progress</span></td><td>Dec 2025</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <footer class="l2-footer">
+    <div class="l2-f-left"><h4><a href="./index.html">Canopy</a></h4><p>&copy; 2026 Canopy Global. All rights reserved.</p></div>
+    <div class="l2-f-links">
+      <div><a href="./sustainability.html">Sustainability Resources</a><a href="./audit.html">Audit Transparency</a><a href="./methodology.html">Methodology</a></div>
+      <div><a href="./registry.html">Registry</a><a href="./privacy.html">Privacy Policy</a><a href="#">Contact</a></div>
+    </div>
+  </footer>
+</div>
+<script src="./landing2.js"></script>
+<script src="./contact.js"></script>
+</body>
+</html>

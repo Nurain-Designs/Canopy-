@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact Dashboard - Canopy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./dashboard.html" class="active">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="Search data...">
+      </div>
+      <button class="l2-btn-solid impact-calc">Impact Calculator</button>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; overflow: hidden;">
+        <img src="/images/guardian_portrait.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-container">
+    
+    <!-- Hero Section -->
+    <header class="d-hero fade-in-section slide-up">
+      <div class="dh-left">
+        <div class="dh-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+          VERIFIED BY SATELLITE &nbsp; Q4 FISCAL IMPACT REPORT
+        </div>
+        <h1>Impact Dashboard</h1>
+        <p>A comprehensive overview of your organization's ecological stewardship and carbon sequestration performance across global biomes.</p>
+      </div>
+      <div class="dh-right">
+        <button class="dh-btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Last 12 Months
+        </button>
+        <button class="dh-btn-solid">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Export ESG Data
+        </button>
+      </div>
+    </header>
+
+    <!-- KPI Row -->
+    <section class="d-kpi-row fade-in-section slide-up">
+      <div class="kpi-card">
+        <div class="kpi-label">CREDITS<br>PURCHASED</div>
+        <div class="kpi-val"><span class="count-up" data-target="42.8" data-format="k">0</span>k</div>
+        <div class="kpi-sub kpi-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg> +12% YoY</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">RETIRED</div>
+        <div class="kpi-val"><span class="count-up" data-target="18.5" data-format="k">0</span>k</div>
+        <div class="kpi-sub italic">Active offsets</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">CO2 OFFSET</div>
+        <div class="kpi-val"><span class="count-up" data-target="124" data-format="number">0</span>t</div>
+        <div class="kpi-sub kpi-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Verified</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">FOREST<br>PROTECTED</div>
+        <div class="kpi-val"><span class="count-up" data-target="12" data-format="number">0</span>k <span class="kpi-unit">ha</span></div>
+        <div class="kpi-sub">6 Active projects</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">COMMUNITIES</div>
+        <div class="kpi-val"><span class="count-up" data-target="2.4" data-format="k">0</span>k</div>
+        <div class="kpi-sub kpi-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> People<br>impacted</div>
+      </div>
+    </section>
+
+    <!-- Visualizations Row -->
+    <section class="d-charts-row fade-in-section slide-up">
+      <!-- Left Chart -->
+      <div class="d-chart-card">
+        <div class="chart-header">
+          <div>
+            <h3>Retirement Trends</h3>
+            <p>Carbon credit retirement over the last 12 months</p>
+          </div>
+          <div class="chart-legend">
+            <span><span class="dot dark"></span> Retired</span>
+            <span><span class="dot light"></span> Purchased</span>
+          </div>
+        </div>
+        <div class="bar-chart-container">
+          <!-- pure css bar chart -->
+          <div class="bars">
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 60%;"></div>
+              <div class="bar dark-bar" style="height: 0%;"></div>
+              <span class="x-label">JAN</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 70%;"></div>
+              <div class="bar dark-bar" style="height: 0%;"></div>
+              <span class="x-label">MAR</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 65%;"></div>
+              <div class="bar dark-bar" style="height: 40%;">
+                <div class="bar-tooltip">12.5k</div>
+              </div>
+              <span class="x-label">MAY</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 80%;"></div>
+              <div class="bar dark-bar" style="height: 70%;"></div>
+              <span class="x-label">JUL</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 90%;"></div>
+              <div class="bar dark-bar" style="height: 85%;"></div>
+              <span class="x-label">SEP</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar light-bar" style="height: 100%;"></div>
+              <div class="bar dark-bar" style="height: 90%;"></div>
+              <span class="x-label">NOV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Chart -->
+      <div class="d-chart-card">
+        <div class="chart-header text-center">
+          <h3>Regional Impact</h3>
+          <p>Portfolio distribution by geography</p>
+        </div>
+        <div class="donut-container">
+          <div class="donut-chart">
+            <div class="donut-inner">
+              <div class="donut-val">2.4M tonnes<br>CO2</div>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="dl-item"><span class="dot d-sa"></span> S. America <span class="dl-val">45%</span></div>
+            <div class="dl-item"><span class="dot d-se"></span> SE Asia <span class="dl-val">25%</span></div>
+            <div class="dl-item"><span class="dot d-af"></span> Africa <span class="dl-val">30%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="d-map-section fade-in-section slide-up">
+      <div class="map-header">
+        <div>
+          <h3>Global Asset Tracking</h3>
+          <p>Live satellite verification points for your active conservation projects.</p>
+        </div>
+        <div class="map-actions">
+          <span class="active-feed"><span class="dot-pulse"></span> Active Feed</span>
+          <a href="./marketplace.html">View All Pins</a>
+        </div>
+      </div>
+      <div class="map-container">
+        <!-- Floating Info Box -->
+        <div class="map-info-box">
+          <img src="/images/amazon.png" alt="Thumb">
+          <div class="tt-info">
+            <h4>Sumatra Rainforest V</h4>
+            <p>Lat: -0.589 | Long: 101.343</p>
+            <div class="tt-badge">RETIRING: 4.2k</div>
+          </div>
+        </div>
+
+        <!-- Using public map background if exists or placeholder -->
+        <img src="/images/map_background.jpg" alt="Global Map" class="map-bg" onerror="this.src='https://via.placeholder.com/1200x500/cccccc/ffffff?text=Map+Background'">
+        
+        <!-- Pin 1 -->
+        <div class="map-pin" style="top: 50%; left: 20%;">
+          <div class="pin-dot"></div>
+          <div class="pin-pulse"></div>
+        </div>
+        
+        <!-- Pin 2 -->
+        <div class="map-pin" style="top: 35%; left: 50%;">
+          <div class="pin-dot"></div>
+          <div class="pin-pulse"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Split Section -->
+    <section class="d-bottom-row fade-in-section slide-up">
+      <!-- Executive Summary -->
+      <div class="d-exec-summary">
+        <h2>Executive Summary</h2>
+        <div class="cn-track-box">
+          <h4>Carbon Neutrality Track</h4>
+          <p>You are currently on track to hit Net Zero by 2030<br>based on current credit retirement velocity.</p>
+        </div>
+        
+        <h4 class="small-caps">TOP PROJECTS</h4>
+        <div class="top-project-item">
+          <div class="tp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L3 14h6l-3 8h12l-3-8h6z"></path></svg></div>
+          <div class="tp-text">
+            <h5>Amazon Basin X</h5>
+            <p>Avoided<br>Deforestation</p>
+          </div>
+          <div class="tp-val">40%</div>
+        </div>
+        <div class="top-project-item has-border-bottom">
+          <div class="tp-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 12h20M2 8h20M2 16h20" stroke-dasharray="4 2"></path></svg></div>
+          <div class="tp-text">
+            <h5>Coastal<br>Mangroves</h5>
+            <p>Blue Carbon</p>
+          </div>
+          <div class="tp-val">25%</div>
+        </div>
+
+        <h4 class="small-caps">ESG REPORTING QUICK EXPORT</h4>
+        <div class="export-btns">
+          <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg> PDF</button>
+          <button><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line></svg> CSV</button>
+        </div>
+      </div>
+
+      <!-- Audit Trail -->
+      <div class="d-audit-trail">
+        <h3>Verification Audit Trail</h3>
+        <div class="audit-list">
+          <div class="al-item">
+            <div class="al-time">10 MIN<br>AGO</div>
+            <div class="al-content">
+              <h4>Satellite Pass Confirmed</h4>
+              <p>Sentinel-2 data ingested for Amazon Parcel<br>A-42.</p>
+            </div>
+          </div>
+          <div class="al-item">
+            <div class="al-time">2 HRS AGO</div>
+            <div class="al-content">
+              <h4>Credit Retirement Proof Issued</h4>
+              <p>Hash: 0x4f2...3a92 validated for 500t CO2.</p>
+            </div>
+          </div>
+          <div class="al-item no-border">
+            <div class="al-time">YESTERDAY</div>
+            <div class="al-content">
+              <h4>New Biomass Verification</h4>
+              <p>Lidar scan complete for Coastal Mangrove<br>Project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <a href="./index.html" class="footer-logo">Canopy</a>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise Satellite Verification for<br/>Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <div class="f-col"><a href="./methodology.html">Sustainability Methodology</a></div>
+      <div class="f-col"><a href="./audit.html">Audit Trails</a></div>
+      <div class="f-col"><a href="./registry.html">Terms of Service</a></div>
+      <div class="f-col">
+        <a href="./registry.html">Security Whitepaper</a>
+        <a href="./registry.html">Carbon Registry API</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./landing2.js"></script>
+  <script src="./contact.js"></script>
+</body>
+</html>
+

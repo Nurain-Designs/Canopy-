@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy - Carbon Registry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./registry.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <nav class="l2-nav">
+      <a href="./index.html" class="l2-logo">Canopy</a>
+      
+      <div class="l2-nav-links">
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./verification.html">Verification</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./team.html">Team</a>
+      </div>
+
+      <div class="l2-nav-actions">
+        <button class="l2-btn-solid" onclick="window.location.href='./marketplace.html'">Explore Terrain</button>
+        <div style="display: flex; align-items: center; margin-left: 0.5rem;">
+          <img src="/images/guardian_portrait.png" alt="Profile" style="width:32px;height:32px;border-radius:50%;object-fit:cover;border:1px solid #ccc;">
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="reg-container">
+      
+      <!-- Header -->
+      <header class="reg-header">
+        <div class="badge-mint">Immutable Registry Ledger</div>
+        <h1>Canopy Environmental Asset Registry</h1>
+        <p>Access the global registry nodes to track certified carbon volumes, audit trails, and permanent credit retirement ledger records with full transaction hashes.</p>
+      </header>
+
+      <!-- Stats Grid -->
+      <section class="reg-stats-grid fade-in-section slide-up">
+        <div class="reg-stat-card">
+          <span class="reg-stat-label">Total Volume Registered</span>
+          <span class="reg-stat-val"><span class="count-up" data-target="142800" data-format="number">0</span> <span style="font-size: 1.2rem; font-weight: 400; color: var(--text-muted);">tCO2e</span></span>
+          <span class="reg-stat-sub">Across 6 global biomes</span>
+        </div>
+        <div class="reg-stat-card">
+          <span class="reg-stat-label">Permanently Retired</span>
+          <span class="reg-stat-val"><span class="count-up" data-target="18500" data-format="number">0</span> <span style="font-size: 1.2rem; font-weight: 400; color: var(--text-muted);">tCO2e</span></span>
+          <span class="reg-stat-sub">Offset out of active circulation</span>
+        </div>
+        <div class="reg-stat-card">
+          <span class="reg-stat-label">Node Verification Compliance</span>
+          <span class="reg-stat-val"><span class="count-up" data-target="99.8" data-format="percent">0%</span></span>
+          <span class="reg-stat-sub">14 Active regional sentinel nodes</span>
+        </div>
+      </section>
+
+      <!-- Search & Filters -->
+      <section class="reg-search-row fade-in-section slide-up">
+        <div class="reg-search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="reg-search-input" placeholder="Search by Project, Transaction ID, or Hash...">
+        </div>
+        <div class="reg-filter-group">
+          <select class="reg-select" id="status-filter">
+            <option value="all">All Statuses</option>
+            <option value="retired">Retired</option>
+            <option value="active">Active</option>
+          </select>
+          <select class="reg-select" id="vintage-filter">
+            <option value="all">All Vintages</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Table ledger -->
+      <section class="reg-table-wrapper fade-in-section slide-up">
+        <div class="reg-table-header">
+          <h3>Registered Asset Ledgers</h3>
+          <div class="badge-mint">Live Ledger Updates</div>
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="reg-table" id="ledger-table">
+            <thead>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Project Name</th>
+                <th>Volume (tCO2e)</th>
+                <th>Vintage</th>
+                <th>Status</th>
+                <th>Audit Hash</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="ledger-row" data-status="retired" data-vintage="2024">
+                <td class="tx-id">CNP-992-B04-VER-24</td>
+                <td>Amazon Basin X Reforestation</td>
+                <td>2,500</td>
+                <td>2024</td>
+                <td>
+                  <span class="status-badge retired">
+                    <span class="dot"></span>Retired
+                  </span>
+                </td>
+                <td class="tx-hash">0x4f2d7...3a92</td>
+              </tr>
+              <tr class="ledger-row" data-status="retired" data-vintage="2023">
+                <td class="tx-id">CNP-104-D02-VER-23</td>
+                <td>Sumatra Rainforest V Preservation</td>
+                <td>4,200</td>
+                <td>2023</td>
+                <td>
+                  <span class="status-badge retired">
+                    <span class="dot"></span>Retired
+                  </span>
+                </td>
+                <td class="tx-hash">0x7a3e8...c81d</td>
+              </tr>
+              <tr class="ledger-row" data-status="active" data-vintage="2024">
+                <td class="tx-id">CNP-805-A11-VER-24</td>
+                <td>Acre REDD+ Forest Conservation</td>
+                <td>12,500</td>
+                <td>2024</td>
+                <td>
+                  <span class="status-badge active">
+                    <span class="dot"></span>Active
+                  </span>
+                </td>
+                <td class="tx-hash">0x9e1a4...15b3</td>
+              </tr>
+              <tr class="ledger-row" data-status="retired" data-vintage="2022">
+                <td class="tx-id">CNP-302-G19-VER-22</td>
+                <td>Mai Ndombe Peatland Protection</td>
+                <td>8,800</td>
+                <td>2022</td>
+                <td>
+                  <span class="status-badge retired">
+                    <span class="dot"></span>Retired
+                  </span>
+                </td>
+                <td class="tx-hash">0x3b1c9...2ef7</td>
+              </tr>
+              <tr class="ledger-row" data-status="active" data-vintage="2023">
+                <td class="tx-id">CNP-504-F12-VER-23</td>
+                <td>Son La Community Restoration</td>
+                <td>9,100</td>
+                <td>2023</td>
+                <td>
+                  <span class="status-badge active">
+                    <span class="dot"></span>Active
+                  </span>
+                </td>
+                <td class="tx-hash">0x1d4f2...89a2</td>
+              </tr>
+              <tr class="ledger-row" data-status="active" data-vintage="2023">
+                <td class="tx-id">CNP-112-C02-VER-23</td>
+                <td>Borneo Peatlands Hydration</td>
+                <td>6,400</td>
+                <td>2023</td>
+                <td>
+                  <span class="status-badge active">
+                    <span class="dot"></span>Active
+                  </span>
+                </td>
+                <td class="tx-hash">0x8a9b2...42c1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Document Packages -->
+      <section class="reg-docs-section fade-in-section slide-up">
+        <div class="reg-docs-header">
+          <h2>Registry Verification Documents</h2>
+        </div>
+        <div class="reg-docs-grid">
+          <div class="doc-card" onclick="alert('Downloading: Project Design Document')">
+            <div class="doc-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              <span class="doc-meta">PDF • 14.2 MB</span>
+            </div>
+            <h4>Project Design Document (PDD)</h4>
+            <p>Complete technical blueprint, methodology compliance validation, and project boundaries description.</p>
+            <div class="doc-verify">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"></path></svg>
+              REGISTRY NODE APPROVED
+            </div>
+          </div>
+          
+          <div class="doc-card" onclick="alert('Downloading: Carbon Calculation Matrix')">
+            <div class="doc-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+              <span class="doc-meta">XLSX • 2.1 MB</span>
+            </div>
+            <h4>Carbon Calculation Matrix</h4>
+            <p>Raw sequestration projection models, growth telemetry logs, and baseline additionality algorithms.</p>
+            <div class="doc-verify">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"></path></svg>
+              HASH VERIFIED
+            </div>
+          </div>
+
+          <div class="doc-card" onclick="alert('Downloading: Legal Stewardship Deed')">
+            <div class="doc-top">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M16 13H8"></path><path d="M16 17H8"></path><path d="M10 9H8"></path></svg>
+              <span class="doc-meta">PDF • 4.8 MB</span>
+            </div>
+            <h4>Legal Ownership Records</h4>
+            <p>Land ownership documents, indigenous stewardship agreements, and credit issuance protocols.</p>
+            <div class="doc-verify">
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"></path></svg>
+              SIGNATURES VALIDATED
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="l2-footer">
+      <div class="l2-f-left">
+        <h4><a href="./index.html">Canopy</a></h4>
+        <p>&copy; 2026 Canopy Global. All rights reserved. Precise Satellite Verification for Global Reforestation.</p>
+      </div>
+      <div class="l2-f-links">
+        <div>
+          <a href="./methodology.html">Sustainability Methodology</a>
+          <a href="./audit.html">Audit Trails</a>
+          <a href="./registry.html">Carbon Registry API</a>
+        </div>
+        <div>
+          <a href="./registry.html">Registry ledger</a>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Frontend Search & Filtering Logic
+    const searchInput = document.getElementById('reg-search-input');
+    const statusFilter = document.getElementById('status-filter');
+    const vintageFilter = document.getElementById('vintage-filter');
+    const rows = document.querySelectorAll('.ledger-row');
+
+    function filterTable() {
+      const searchVal = searchInput.value.toLowerCase().trim();
+      const statusVal = statusFilter.value;
+      const vintageVal = vintageFilter.value;
+
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const status = row.getAttribute('data-status');
+        const vintage = row.getAttribute('data-vintage');
+
+        const searchMatch = text.includes(searchVal);
+        const statusMatch = statusVal === 'all' || status === statusVal;
+        const vintageMatch = vintageVal === 'all' || vintage === vintageVal;
+
+        if (searchMatch && statusMatch && vintageMatch) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', filterTable);
+    statusFilter.addEventListener('change', filterTable);
+    vintageFilter.addEventListener('change', filterTable);
+  </script>
+  <script src="./contact.js"></script>
+  <script src="./landing2.js"></script>
+</body>
+</html>

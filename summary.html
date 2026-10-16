@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Purchase Summary</title>
+  <link rel="stylesheet" crossorigin href="./assets/summary-BSbNqfs3.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html" style="color: var(--c-primary); font-weight: 600; border-bottom: 2px solid var(--c-primary);">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-solid impact-calc">Impact Calculator</button>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; overflow: hidden;">
+        <img src="./images/guardian_portrait.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stepper -->
+  <div class="p-stepper fade-in-section slide-up">
+    <a href="./purchase.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      SELECT PROJECT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./quantity.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      QUANTITY
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./impact.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      IMPACT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./summary.html" class="p-step active" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">4</div>
+      SUMMARY
+    </a>
+  </div>
+
+  <!-- Main 3-Column Layout -->
+  <div class="s-layout">
+    
+    <!-- Left Col: Project Info -->
+    <div class="s-col-left fade-in-section slide-right">
+      <div class="s-proj-card">
+        <div class="s-proj-img-wrap" style="cursor: pointer;" onclick="window.location.href='./project-details.html'">
+          <img src="./images/amazon.png" alt="Amazon Basin">
+          <div class="s-proj-img-overlay">
+            <span class="s-proj-tag">ACTIVE RESTORATION ZONE</span>
+            <h2 class="s-proj-title"><a href="./project-details.html" style="text-decoration: none; color: inherit;">Amazon Basin<br/>Restoration</a></h2>
+          </div>
+        </div>
+        <div class="s-proj-details">
+          <div class="s-pd-row">
+            <div class="s-pd-col">
+              <div class="s-pd-label">PROJECT LOCATION</div>
+              <div class="s-pd-val">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Pará, Brazil
+              </div>
+            </div>
+          </div>
+          <div class="s-pd-row" style="margin-top: 1.5rem;">
+            <div class="s-pd-col">
+              <div class="s-pd-label">VINTAGE</div>
+              <div class="s-pd-val" style="color: #333;">2023</div>
+            </div>
+            <div class="s-pd-col">
+              <div class="s-pd-label">STANDARD</div>
+              <div class="s-pd-val" style="color: #333;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--c-primary)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Verra (VCS)
+              </div>
+            </div>
+          </div>
+          <div class="s-pd-desc">
+            A high-integrity reforestation initiative focused on restoring degraded primary rainforest in the Pará region, sequestering carbon while revitalizing indigenous biodiversity.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Col: Order Summary -->
+    <div class="s-col-center fade-in-section slide-up">
+      <div class="s-summary-card">
+        <div class="s-sc-header">
+          <div>
+            <h2 class="s-sc-title">Order Summary</h2>
+            <div class="s-tx-id">TX-ID: 8829-440-AMZ</div>
+          </div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        </div>
+
+        <div class="s-line-item">
+          <div>
+            <div class="s-li-title">Carbon Offset Credits</div>
+            <div class="s-li-sub">500 units @ $28.50/ea</div>
+          </div>
+          <div class="s-li-price">$14,250.00</div>
+        </div>
+
+        <div class="s-line-item">
+          <div>
+            <div class="s-li-title">Platform Service Fee</div>
+            <div class="s-li-sub">Secure Blockchain Settlement</div>
+          </div>
+          <div class="s-li-price">$250.00</div>
+        </div>
+
+        <div class="s-total-row">
+          <div class="s-total-label">Total<br/>Amount</div>
+          <div class="s-total-price">$14,500.00</div>
+        </div>
+
+        <button class="s-btn-complete" onclick="window.location.href='./confirmed.html'">
+          Complete Purchase
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+
+        <div class="s-tos-text">
+          By clicking, you agree to our <a href="./registry.html">Terms of Service</a><br/>and <a href="#">Verification</a> Protocols.
+        </div>
+
+        <div class="s-secure-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <div class="s-secure-text">All transactions are secured with 256-bit encryption and immutable ledger verification.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Col: Impact & Certificate -->
+    <div class="s-col-right fade-in-section slide-left">
+      
+      <div class="s-impact-cards">
+        <div class="s-icard">
+          <div class="s-icard-icon" style="color: #2b7a4b;">CO₂</div>
+          <div>
+            <div class="s-icard-label">NET SEQUESTRATION</div>
+            <div class="s-icard-val">500 Metric Tonnes CO2</div>
+          </div>
+        </div>
+        <div class="s-icard">
+          <div class="s-icard-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-8"></path><path d="M8 14l-4 4"></path><path d="M16 14l4 4"></path><circle cx="12" cy="7" r="5"></circle></svg>
+          </div>
+          <div>
+            <div class="s-icard-label">ECOSYSTEM PROTECTED</div>
+            <div class="s-icard-val">12.4 Hectares</div>
+          </div>
+        </div>
+        <div class="s-icard">
+          <div class="s-icard-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div>
+            <div class="s-icard-label">BIODIVERSITY IMPACT</div>
+            <div class="s-icard-val">42 Critical Species</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="s-cert-header">CERTIFICATE PREVIEW</div>
+      
+      <!-- Certificate HTML rendering -->
+      <div class="s-cert-box">
+        <svg class="s-cert-watermark" viewBox="0 0 24 24" fill="none" stroke="var(--c-primary)" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+        
+        <div class="s-cb-top">
+          <div>
+            <div class="s-cb-logo">CANOPY</div>
+            <div class="s-cb-sub">OFFICIAL RETIREMENT CERTIFICATE</div>
+          </div>
+          <div class="s-cb-cert-id">
+            <div>Certificate 1</div>
+            <div class="s-cb-cert-num">CP-2023-99120</div>
+          </div>
+        </div>
+
+        <div class="s-cb-center">
+          <div class="s-cb-certifies">This certifies the carbon retirement for</div>
+          <div class="s-cb-name">Global Enterprise Corp</div>
+        </div>
+
+        <div class="s-cb-bottom">
+          <div class="s-cb-stamp">
+            <img src="./images/stamp.png" alt="Stamp" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div class="s-cb-sig">
+            <div class="s-cb-sig-title">AUTHORIZED SIGNATURE</div>
+            <div class="s-cb-sig-line"></div>
+            <div class="s-cb-sig-name">Chief Impact Officer, Canopy</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <a href="./index.html" class="footer-logo">Canopy</a>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise Satellite Verification for<br/>Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <div class="f-col"><a href="./methodology.html">Sustainability Methodology</a></div>
+      <div class="f-col"><a href="./audit.html">Audit Trails</a></div>
+      <div class="f-col"><a href="./registry.html">Terms of Service</a></div>
+      <div class="f-col">
+        <a href="./registry.html">Security Whitepaper</a>
+        <a href="./registry.html">Carbon Registry API</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in-section').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Prevent default on all impact calculator elements
+      document.querySelectorAll('.impact-calc').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      });
+
+      const storedVol = localStorage.getItem('canopy_checkout_volume');
+      if (storedVol && !isNaN(storedVol)) {
+        const volume = parseInt(storedVol, 10);
+        const spotPrice = 28.50;
+        const subtotal = volume * spotPrice;
+        const registryFee = 250.00;
+        const total = subtotal + registryFee;
+
+        // Update subtotal row info
+        const subTextEl = document.querySelector('.s-li-sub');
+        if (subTextEl) subTextEl.innerHTML = `${volume.toLocaleString()} units @ $${spotPrice.toFixed(2)}/ea`;
+
+        const subPriceEl = document.querySelector('.s-li-price');
+        if (subPriceEl) subPriceEl.innerHTML = `$${subtotal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+
+        // Update total
+        const totalPriceEl = document.querySelector('.s-total-price');
+        if (totalPriceEl) totalPriceEl.innerHTML = `$${total.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+
+        // Update impact card values
+        const impactCards = document.querySelectorAll('.s-icard');
+        if (impactCards.length >= 3) {
+          impactCards[0].querySelector('.s-icard-val').innerHTML = `${volume.toLocaleString()} Metric Tonnes CO2`;
+          impactCards[1].querySelector('.s-icard-val').innerHTML = `${Math.round(volume * 0.25).toLocaleString()} Hectares`;
+          impactCards[2].querySelector('.s-icard-val').innerHTML = `${Math.max(1, Math.round(volume * (42 / 500))).toLocaleString()} Critical Species`;
+        }
+      }
+    });
+  </script>
+  <script src="./contact.js"></script>
+</body>
+</html>

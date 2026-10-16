@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Purchase Flow</title>
+  <link rel="stylesheet" crossorigin href="./assets/purchase-BxEPqnOg.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-outline impact-calc">Impact Calculator</button>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; overflow: hidden;">
+        <img src="./images/guardian_portrait.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </div>
+  </nav>
+
+  <div class="p-container">
+    
+    <!-- Stepper -->
+    <div class="p-stepper">
+      <a href="./purchase.html" class="p-step active" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="p-step-icon">1</div>
+        SELECT PROJECT
+      </a>
+      <div class="p-step-line"></div>
+      <a href="./quantity.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="p-step-icon">2</div>
+        QUANTITY
+      </a>
+      <div class="p-step-line"></div>
+      <a href="./impact.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="p-step-icon">3</div>
+        IMPACT
+      </a>
+      <div class="p-step-line"></div>
+      <a href="./summary.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+        <div class="p-step-icon">4</div>
+        SUMMARY
+      </a>
+    </div>
+
+    <!-- Hero -->
+    <h1 class="p-hero-title">Verified Reforestation Portfolio</h1>
+    <p class="p-hero-desc">Select a high-integrity project audited by our satellite verification network. Each credit represents one metric tonne of sequestered CO2.</p>
+
+    <!-- Project Grid -->
+    <div class="p-grid">
+      
+      <!-- Card 1 -->
+      <div class="p-card">
+        <div class="p-card-img-wrapper">
+          <img src="./images/amazon.png" alt="Amazon Basin" class="p-card-img">
+          <div class="p-card-badge" style="color: #b08c2a;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            GOLD STANDARD
+          </div>
+        </div>
+        <div class="p-card-content">
+          <div class="p-card-title">Amazon Basin Restoration</div>
+          <div class="p-card-location">Location: Pará, Brazil</div>
+          <div class="p-card-footer">
+            <div>
+              <div class="p-price-label">PRICE PER TONNE</div>
+              <div class="p-price-val">$28.50</div>
+            </div>
+            <button class="p-btn-select" onclick="window.location.href='./quantity.html'">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-card">
+        <div class="p-card-img-wrapper">
+          <img src="./images/congo.png" alt="Great Bear Bio-Corridor" class="p-card-img">
+          <div class="p-card-badge" style="color: #444;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            VERRA
+          </div>
+        </div>
+        <div class="p-card-content">
+          <div class="p-card-title">Great Bear Bio-Corridor</div>
+          <div class="p-card-location">Location: BC, Canada</div>
+          <div class="p-card-footer">
+            <div>
+              <div class="p-price-label">PRICE PER TONNE</div>
+              <div class="p-price-val">$32.00</div>
+            </div>
+            <button class="p-btn-select" onclick="window.location.href='./quantity.html'">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-card">
+        <div class="p-card-img-wrapper">
+          <img src="./images/borneo.png" alt="Borneo Rainforest" class="p-card-img">
+          <div class="p-card-badge" style="color: #444;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+            VIVO
+          </div>
+        </div>
+        <div class="p-card-content">
+          <div class="p-card-title">Borneo Rainforest Restoration Project</div>
+          <div class="p-card-location">Location: Kalimantan, Indonesia</div>
+          <div class="p-card-footer">
+            <div>
+              <div class="p-price-label">PRICE PER TONNE</div>
+              <div class="p-price-val">$19.00</div>
+            </div>
+            <button class="p-btn-select" onclick="window.location.href='./quantity.html'">Select</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Info -->
+    <div class="p-info-grid">
+      
+      <!-- Verification Col -->
+      <div class="p-info-col">
+        <div class="p-info-label">REAL-TIME VERIFICATION</div>
+        
+        <div class="p-info-item">
+          <div class="p-info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="8" y1="12" x2="16" y2="12"></line><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+          </div>
+          <div class="p-info-text">
+            <h4>Sentinel-2 Link Active</h4>
+            <p>Last biomass scan: 6.2 hours ago. Accuracy: 98.4%.</p>
+          </div>
+        </div>
+
+        <div class="p-info-item" style="margin-bottom: 0;">
+          <div class="p-info-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <div class="p-info-text">
+            <h4>Dynamic Pricing Model</h4>
+            <p>Adjusted based on secondary market registry demand.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics Col -->
+      <div class="p-info-col">
+        <div class="p-info-label">TRUST METRICS</div>
+        
+        <div class="p-trust-row">
+          <div class="p-trust-header">
+            <span>Global Registry Rank</span>
+            <span class="p-trust-val">#1 Prime</span>
+          </div>
+          <div class="p-progress-bar">
+            <div class="p-progress-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="p-trust-row" style="margin-bottom: 0;">
+          <div class="p-trust-header">
+            <span>Leakage Risk Assessment</span>
+            <span class="p-trust-val">Low (0.02%)</span>
+          </div>
+          <div class="p-progress-bar">
+            <div class="p-progress-fill" style="width: 98%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telemetry Col -->
+      <div class="p-info-col p-info-col-dark">
+        <img src="./images/telemetry_stream.png" alt="Telemetry" class="p-stream-img">
+        <!-- Overlay removed because it's baked into the user's image -->
+        <!-- <div class="p-stream-overlay">
+          <div class="p-dot"></div>
+          LIVE TELEMETRY STREAM
+        </div> -->
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer">
+    <div class="l2-f-left">
+      <h4><a href="./index.html">Canopy</a></h4>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise<br/>Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <a href="./methodology.html">Sustainability Methodology</a>
+      <a href="./audit.html">Audit Trails</a>
+      <a href="./registry.html">Terms of Service</a>
+      <a href="./registry.html">Security Whitepaper</a>
+      <a href="./registry.html">Carbon Registry API</a>
+    </div>
+  </footer>
+
+  <script src="./contact.js"></script>
+</body>
+</html>
+

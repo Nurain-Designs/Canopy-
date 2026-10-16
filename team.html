@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Governance Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="./assets/team-Cz07d7nL.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="l2-navbar fade-in-section slide-down">
+    <a href="./index.html" class="l2-nav-brand" style="text-decoration: none;">Canopy</a>
+    <ul class="l2-nav-links">
+      <li><a href="./marketplace.html">Marketplace</a></li>
+      <li><a href="./dashboard.html">Dashboard</a></li>
+      <li><a href="./verification.html">Verification</a></li>
+      <li><a href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./team.html" class="active">Team</a></li>
+    </ul>
+    <div class="l2-nav-actions">
+      <a href="#" class="l2-btn l2-btn-dark">Contact Sales</a>
+      <div class="l2-nav-icons" style="display: flex; align-items: center; gap: 1rem; margin-left: 0.5rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width:20px;height:20px;"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="width:20px;height:20px;"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <img src="./images/guardian_portrait.png" alt="Profile" style="width:32px;height:32px;border-radius:50%;object-fit:cover;border:1px solid #ccc;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Governance Hub Main Section -->
+  <section class="gov-hub-section fade-in-section slide-up">
+    <div class="gov-container">
+      <!-- Section Header -->
+      <div class="gov-header">
+        <h1>Governance Hub</h1>
+        <p>Manage your team's institutional access and generate verified sustainability reports using high-precision satellite telemetry.</p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="gov-tabs">
+        <button class="tab-btn active">Reporting & Export Center</button>
+        <button class="tab-btn">Team Settings</button>
+      </div>
+
+      <!-- Dashboard Layout -->
+      <div class="gov-dashboard-grid" id="reporting-tab-content">
+        <!-- Left Side: Report Builder & Export -->
+        <div class="gov-left-col">
+          <!-- Report Builder Card -->
+          <div class="gov-card report-builder-card fade-in-section slide-right">
+            <h3>Report Builder</h3>
+            <span class="card-label">AVAILABLE MODULES</span>
+            
+            <div class="modules-list">
+              <div class="module-item" draggable="true">
+                <div class="module-handle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="6" r="1"></circle><circle cx="9" cy="18" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="6" r="1"></circle><circle cx="15" cy="18" r="1"></circle></svg>
+                </div>
+                <div class="module-info">
+                  <strong>ESG</strong>
+                  <span>Executive Summary</span>
+                </div>
+              </div>
+              
+              <div class="module-item" draggable="true">
+                <div class="module-handle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="6" r="1"></circle><circle cx="9" cy="18" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="6" r="1"></circle><circle cx="15" cy="18" r="1"></circle></svg>
+                </div>
+                <div class="module-info">
+                  <strong>Carbon Sequestration</strong>
+                  <span>Map</span>
+                </div>
+              </div>
+              
+              <div class="module-item" draggable="true">
+                <div class="module-handle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="6" r="1"></circle><circle cx="9" cy="18" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="6" r="1"></circle><circle cx="15" cy="18" r="1"></circle></svg>
+                </div>
+                <div class="module-info">
+                  <strong>Verification</strong>
+                  <span>Audit Logs</span>
+                </div>
+              </div>
+              
+              <div class="module-item" draggable="true">
+                <div class="module-handle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="6" r="1"></circle><circle cx="9" cy="18" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="6" r="1"></circle><circle cx="15" cy="18" r="1"></circle></svg>
+                </div>
+                <div class="module-info">
+                  <strong>Financial</strong>
+                  <span>ROI Table</span>
+                </div>
+              </div>
+              
+              <div class="module-item" draggable="true">
+                <div class="module-handle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="6" r="1"></circle><circle cx="9" cy="18" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="6" r="1"></circle><circle cx="15" cy="18" r="1"></circle></svg>
+                </div>
+                <div class="module-info">
+                  <strong>Bio-Diversity</strong>
+                  <span>Metrics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Export Options Card -->
+          <div class="gov-card export-options-card fade-in-section slide-right">
+            <h3>Export Options</h3>
+            <div class="export-buttons-grid">
+              <a href="#" class="export-btn">
+                <div class="eb-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </div>
+                <div class="eb-info">
+                  <span class="eb-action">Export <span class="eb-sub-action">Annual-Ready</span></span>
+                  <span class="eb-title">to PDF</span>
+                </div>
+              </a>
+              
+              <a href="#" class="export-btn">
+                <div class="eb-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                </div>
+                <div class="eb-info">
+                  <span class="eb-action">Excel <span class="eb-sub-action">Data-Only</span></span>
+                  <span class="eb-title">(.xlsx)</span>
+                </div>
+              </a>
+              
+              <a href="#" class="export-btn">
+                <div class="eb-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="9" y2="17"></line><line x1="15" y1="13" x2="15" y2="17"></line><line x1="12" y1="5" x2="12" y2="17"></line></svg>
+                </div>
+                <div class="eb-info">
+                  <span class="eb-action">Raw <span class="eb-sub-action">Registry API</span></span>
+                  <span class="eb-title">CSV</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- PDD Document Upload Card -->
+          <div class="gov-card pdd-upload-card fade-in-section slide-right" style="margin-top: 1.5rem;">
+            <h3>Upload PDD</h3>
+            <p style="font-size: 0.8rem; color: #666; margin-bottom: 1rem; line-height: 1.4;">
+              Upload your Project Design Document (PDD) to parse metadata and synchronize satellite preview telemetry.
+            </p>
+            <div class="pdd-dropzone" id="pdd-drop-zone" style="border: 2px dashed #a3ccb4; padding: 1.5rem; text-align: center; border-radius: 6px; cursor: pointer; background: #faf9f6; transition: background 0.3s; position: relative;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" style="margin-bottom: 0.5rem; display: inline-block;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #0a2115;" id="pdd-status-text">Click or Drag PDF / DOCX</div>
+              <div style="font-size: 0.7rem; color: #888; margin-top: 0.2rem;">Max file size: 10MB</div>
+              <input type="file" id="pdd-file-input" accept=".pdf,.doc,.docx" style="display: none;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Live Preview Report Card -->
+        <div class="gov-right-col">
+          <div class="report-preview-card fade-in-section slide-left">
+            <!-- Top Indicator -->
+            <div class="preview-indicator">
+              <span class="live-preview-badge">
+                <span class="pulse-dot"></span> LIVE PREVIEW
+              </span>
+              <span class="preview-doc-type">Q4 2026 SUSTAINABILITY REPORT</span>
+            </div>
+
+            <!-- Report Title -->
+            <h2 class="preview-report-title">Amazonian Canopy Preservation Audit</h2>
+
+            <!-- Verification Metadata -->
+            <div class="preview-meta-row">
+              <div class="meta-item">
+                <span class="meta-label">VERIFICATION STATUS</span>
+                <span class="status-pill verified">SATELLITE CONFIRMED</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">REGISTRY ID</span>
+                <span class="status-pill text-id">CNPY-2024-BR-091</span>
+              </div>
+            </div>
+
+            <!-- Visualization Row (Chart & Image Side-by-Side) -->
+            <div class="preview-visuals">
+              <!-- Bar Chart Box -->
+              <div class="visual-box chart-box">
+                <div class="visual-label">
+                  SEQUESTRATION<br/>VOLUME
+                </div>
+                <div class="chart-container">
+                  <div class="bar-chart">
+                    <div class="chart-bar bar-1"></div>
+                    <div class="chart-bar bar-2"></div>
+                    <div class="chart-bar bar-3"></div>
+                    <div class="chart-bar bar-4"></div>
+                    <div class="chart-bar bar-5"></div>
+                    <div class="chart-bar bar-6"></div>
+                  </div>
+                </div>
+                <div class="chart-val-container">
+                  <span class="chart-value">1.2M</span>
+                  <span class="chart-unit">tCO2e</span>
+                </div>
+              </div>
+
+              <!-- Satellite Forest Image Box -->
+              <div class="visual-box image-box">
+                <img src="./images/forest_canopy_preview.png" alt="Canopy Dense Forest">
+                <div class="image-overlay">
+                  <span class="zone-label">ZONE: XINGU BASIN</span>
+                  <span class="density-label">98.4% Canopy Density</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text Content Section -->
+            <div class="preview-content-section">
+              <h4>Bio-Diversity Impact Analysis</h4>
+              <p>Our high-resolution satellite verification has detected significant progress in the restoration of native flora across the verified sectors. Using hyperspectral imaging, we have tracked a 14% increase in specialized canopy layers since the Q3 baseline audit.</p>
+            </div>
+
+            <!-- Metrics Table -->
+            <div class="preview-metrics-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>METRIC</th>
+                    <th class="text-right">CURRENT VALUE</th>
+                    <th class="text-right">CHANGE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Canopy Height (Avg)</td>
+                    <td class="text-right">28.4m</td>
+                    <td class="text-right highlight-green">+1.2m</td>
+                  </tr>
+                  <tr>
+                    <td>Soil Carbon Stocks</td>
+                    <td class="text-right">142 tC/ha</td>
+                    <td class="text-right highlight-green">+4%</td>
+                  </tr>
+                  <tr>
+                    <td>Vegetation Indices (NDVI)</td>
+                    <td class="text-right">0.82</td>
+                    <td class="text-right highlight-green">+0.05</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Settings Tab Layout -->
+      <div class="gov-dashboard-grid" id="settings-tab-content" style="display: none;">
+        <!-- Left Side: Settings Navigation -->
+        <div class="gov-left-col">
+          <div class="gov-card settings-nav-card">
+            <div class="settings-nav-list">
+              <a href="#org-profile" class="settings-nav-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="15" y2="17"></line></svg>
+                <span>Organization Profile</span>
+              </a>
+              
+              <a href="#roles-permissions" class="settings-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span>Roles & Permissions</span>
+              </a>
+              
+              <a href="#security-controls" class="settings-nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>Security Controls</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Settings Form Details -->
+        <div class="gov-right-col settings-scroll-area">
+          <!-- Section 1: Organization Profile -->
+          <div id="org-profile" class="settings-section fade-in-section slide-right">
+            <div class="section-title-row">
+              <h3>Organization Profile</h3>
+              <a href="#" class="edit-details-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                Edit Details
+              </a>
+            </div>
+            
+            <div class="gov-card org-card-details">
+              <div class="org-card-header">
+                <div class="org-leaf-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.58 1 9.8a7 7 0 0 1-9 8.2z"></path><path d="M9 22v-4h4v4"></path></svg>
+                </div>
+                <div class="org-title-block">
+                  <div class="org-title-row">
+                    <h4>Global Reforest Initiatives Ltd.</h4>
+                    <span class="badge-verified">VERIFIED</span>
+                  </div>
+                  <p class="org-subtitle">Carbon sequestration and biodiversity restoration across Southeast Asia.</p>
+                </div>
+              </div>
+              
+              <div class="org-details-grid">
+                <div class="detail-cell">
+                  <span class="detail-label">LEGAL ENTITY TYPE</span>
+                  <span class="detail-value">Environmental Services & Carbon Markets</span>
+                </div>
+                <div class="detail-cell">
+                  <span class="detail-label">HEADQUARTERS</span>
+                  <span class="detail-value">Singapore, Central Business District</span>
+                </div>
+                <div class="detail-cell">
+                  <span class="detail-label">ESG CONTACT</span>
+                  <span class="detail-value">Sarah Jenkins (Chief Sustainability Officer)</span>
+                </div>
+                <div class="detail-cell">
+                  <span class="detail-label">REGISTRATION ID</span>
+                  <span class="detail-value">VCS-9842-SG-2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Roles & Permissions -->
+          <div id="roles-permissions" class="settings-section fade-in-section slide-left">
+            <div class="section-title-row">
+              <h3>Roles & Permissions</h3>
+              <button class="add-member-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Add New Member
+              </button>
+            </div>
+            
+            <div class="roles-list">
+              <div class="role-item-card">
+                <div class="role-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div class="role-info-block">
+                  <h5>Executive Admin</h5>
+                  <p>Full access to billing, governance, and user management.</p>
+                </div>
+                <div class="role-users-count">
+                  <strong>2 Users</strong>
+                  <span>LEVEL 10</span>
+                </div>
+              </div>
+              
+              <div class="role-item-card">
+                <div class="role-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.58 1 9.8a7 7 0 0 1-9 8.2z"></path></svg>
+                </div>
+                <div class="role-info-block">
+                  <h5>Sustainability Manager</h5>
+                  <p>Manage portfolios, initiate verifications, and project approvals.</p>
+                </div>
+                <div class="role-users-count">
+                  <strong>5 Users</strong>
+                  <span>LEVEL 7</span>
+                </div>
+              </div>
+              
+              <div class="role-item-card">
+                <div class="role-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                </div>
+                <div class="role-info-block">
+                  <h5>Compliance Officer</h5>
+                  <p>Audit trail access and regulatory disclosure oversight.</p>
+                </div>
+                <div class="role-users-count">
+                  <strong>3 Users</strong>
+                  <span>LEVEL 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Security Controls -->
+          <div id="security-controls" class="settings-section fade-in-section slide-right">
+            <div class="section-title-row">
+              <h3>Security Controls</h3>
+            </div>
+            
+            <div class="security-controls-list">
+              <div class="security-item-row">
+                <div class="sec-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <div class="sec-info-block">
+                  <h5>Single Sign-On (SSO)</h5>
+                  <p>Enforce Okta or Azure AD for all enterprise users.</p>
+                </div>
+                <div class="sec-control-action">
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked>
+                    <span class="slider-toggle"></span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="security-item-row">
+                <div class="sec-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </div>
+                <div class="sec-info-block">
+                  <h5>Multi-Factor Authentication</h5>
+                  <p>Mandatory TOTP or hardware key verification.</p>
+                </div>
+                <div class="sec-control-action">
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked>
+                    <span class="slider-toggle"></span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="security-item-row">
+                <div class="sec-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="sec-info-block">
+                  <h5>Session Timeout</h5>
+                  <p>Automatic logout after 30 minutes of inactivity.</p>
+                </div>
+                <div class="sec-control-action">
+                  <div class="dropdown-wrapper">
+                    <select class="timeout-select">
+                      <option value="30">30 MIN</option>
+                      <option value="60">60 MIN</option>
+                      <option value="120">120 MIN</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Save Framework Card -->
+          <div class="save-framework-card fade-in-section slide-up">
+            <div class="sfc-left">
+              <h6>Enterprise Sustainability Governance Framework</h6>
+              <p>You have 4 pending changes to Roles & Security policies. Review and finalize to update the audit trail.</p>
+            </div>
+            <div class="sfc-right">
+              <button class="btn-framework-export">Export Settings</button>
+              <button class="btn-framework-save">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <a href="./index.html" class="footer-logo" style="text-decoration:none; color:inherit; font-family:'Playfair Display', serif; font-size:1.6rem;">Canopy</a>
+      <p>&copy; 2026 Canopy. All rights reserved.<br/>Precise Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-right">
+      <div class="footer-nav">
+        <div class="footer-links-top">
+          <a href="./methodology.html">Sustainability Methodology</a>
+          <a href="./audit.html">Audit Trails</a>
+          <a href="./registry.html">Terms of Service</a>
+          <a href="./registry.html">Security Whitepaper</a>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="./registry.html">Carbon Registry API</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        </a>
+        <a href="#" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function init() {
+      // Zig-Zag Entrance Animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+      document.querySelectorAll('.fade-in-section').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Tab toggling script
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const reportingTab = document.getElementById("reporting-tab-content");
+      const settingsTab = document.getElementById("settings-tab-content");
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          // Remove active state from all tab buttons
+          tabButtons.forEach(b => b.classList.remove("active"));
+          // Add active state to clicked button
+          btn.classList.add("active");
+
+          if (btn.textContent.includes("Reporting")) {
+            reportingTab.style.display = "grid";
+            settingsTab.style.display = "none";
+            // Reset entrance animations to play again
+            reportingTab.querySelectorAll('.fade-in-section').forEach(el => {
+              el.classList.remove('visible');
+            });
+          } else {
+            reportingTab.style.display = "none";
+            settingsTab.style.display = "grid";
+            // Reset entrance animations to play again
+            settingsTab.querySelectorAll('.fade-in-section').forEach(el => {
+              el.classList.remove('visible');
+            });
+          }
+        });
+      });
+
+      // Settings Navigation Scroll Highlight & Smooth Anchor Scrolling
+      const settingsNavItems = document.querySelectorAll(".settings-nav-item");
+      const settingsSections = document.querySelectorAll(".settings-section");
+
+      // Highlight logic on window scroll
+      window.addEventListener("scroll", () => {
+        if (settingsTab.style.display === "none") return;
+
+        let currentSectionId = "";
+        const scrollPos = window.scrollY + 180; // Offset for header + tab bar
+
+        settingsSections.forEach(section => {
+          if (section.offsetTop <= scrollPos) {
+            currentSectionId = section.getAttribute("id");
+          }
+        });
+
+        if (currentSectionId) {
+          settingsNavItems.forEach(item => {
+            const isTarget = item.getAttribute("href") === `#${currentSectionId}`;
+            if (isTarget) {
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+            }
+          });
+        }
+      });
+
+      // Click logic for smooth scroll
+      settingsNavItems.forEach(item => {
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = item.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 120;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth"
+            });
+
+            settingsNavItems.forEach(i => i.classList.remove("active"));
+            item.classList.add("active");
+          }
+        });
+      });
+
+      // ── Governance Actions Interactivity ──
+      const addMemberBtn = document.querySelector('.add-member-btn');
+      if (addMemberBtn) {
+        addMemberBtn.addEventListener('click', () => {
+          const name = prompt("Enter the new member's name:");
+          if (!name) return;
+          const role = prompt("Enter role (e.g. Executive Admin, Sustainability Manager, Compliance Officer):", "Sustainability Manager");
+          if (!role) return;
+          alert(`Access Granted!\nName: ${name}\nRole: ${role}\nAn email invitation has been sent. The governance audit trail has been updated.`);
+        });
+      }
+
+      const exportBtn = document.querySelector('.btn-framework-export');
+      if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+          alert("Exporting Enterprise Governance Settings...\nFile: canopy-governance-framework.json\nExport Complete.");
+        });
+      }
+
+      const saveBtn = document.querySelector('.btn-framework-save');
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          alert("Governance Framework Saved Successfully!\n4 pending policies have been committed to the security audit trail.");
+          const sfcText = document.querySelector('.save-framework-card p');
+          if (sfcText) {
+            sfcText.textContent = "All changes finalized. The audit trail is fully up to date.";
+          }
+        });
+      }
+
+      // ── Footer Social Interactivity ──
+      const socialBtns = document.querySelectorAll('.footer-socials .social-btn');
+      if (socialBtns.length >= 2) {
+        socialBtns[0].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert("Opening Canopy Global Network Hub...");
+          window.location.href = './index.html';
+        });
+        socialBtns[1].addEventListener('click', (e) => {
+          e.preventDefault();
+          const shareUrl = window.location.href;
+          navigator.clipboard.writeText(shareUrl).then(() => {
+            alert(`Link Copied to Clipboard!\nYou can now share this URL: ${shareUrl}`);
+          }).catch(() => {
+            alert(`Share URL: ${shareUrl}`);
+          });
+        });
+      }
+
+      // ── PDD Upload Interactivity ──
+      const dropZone = document.getElementById('pdd-drop-zone');
+      const fileInput = document.getElementById('pdd-file-input');
+      const statusText = document.getElementById('pdd-status-text');
+
+      if (dropZone && fileInput && statusText) {
+        dropZone.addEventListener('click', () => {
+          fileInput.click();
+        });
+
+        // Dragover state styles
+        dropZone.addEventListener('dragover', (e) => {
+          e.preventDefault();
+          dropZone.style.background = '#e3ebf3';
+          dropZone.style.borderColor = '#0a2115';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+          dropZone.style.background = '#faf9f6';
+          dropZone.style.borderColor = '#a3ccb4';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+          e.preventDefault();
+          dropZone.style.background = '#faf9f6';
+          dropZone.style.borderColor = '#a3ccb4';
+          const files = e.dataTransfer.files;
+          if (files.length > 0) {
+            handlePDDFile(files[0]);
+          }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+          if (e.target.files.length > 0) {
+            handlePDDFile(e.target.files[0]);
+          }
+        });
+
+        function handlePDDFile(file) {
+          statusText.innerHTML = '<span style="display:inline-block; width:8px; height:8px; background:#b08c2a; border-radius:50%; margin-right:5px; animation:blink 1.5s infinite;"></span> Parsing document...';
+          
+          setTimeout(() => {
+            alert(`PDD Document "${file.name}" Parsed Successfully!\nCarbon telemetry and metadata updated in live preview.`);
+            statusText.innerHTML = `<span style="color:#2b7a4b;">✓ ${file.name} Parsed</span>`;
+            statusText.style.color = '#2b7a4b';
+            
+            // Dynamic Updates to Report Preview
+            const reportTitle = document.querySelector('.preview-report-title');
+            if (reportTitle) {
+              reportTitle.innerHTML = `Verified Restoration PDD Audit - ${file.name.replace(/\.[^/.]+$/, "")}`;
+            }
+
+            const chartVal = document.querySelector('.chart-value');
+            if (chartVal) {
+              chartVal.textContent = '2.8M';
+            }
+
+            const densityLabel = document.querySelector('.density-label');
+            if (densityLabel) {
+              densityLabel.textContent = '99.2% Canopy Density';
+            }
+
+            // Update Metrics Table Values & highlight
+            const tableRows = document.querySelectorAll('.preview-metrics-table tbody tr');
+            if (tableRows.length >= 3) {
+              // Row 1: Height
+              const row1Vals = tableRows[0].querySelectorAll('td');
+              if (row1Vals.length >= 3) {
+                row1Vals[1].textContent = '31.2m';
+                row1Vals[2].textContent = '+2.8m';
+                tableRows[0].style.background = '#f0f9f4';
+              }
+              // Row 2: Carbon Stocks
+              const row2Vals = tableRows[1].querySelectorAll('td');
+              if (row2Vals.length >= 3) {
+                row2Vals[1].textContent = '156 tC/ha';
+                row2Vals[2].textContent = '+12%';
+                tableRows[1].style.background = '#f0f9f4';
+              }
+              // Row 3: NDVI
+              const row3Vals = tableRows[2].querySelectorAll('td');
+              if (row3Vals.length >= 3) {
+                row3Vals[1].textContent = '0.87';
+                row3Vals[2].textContent = '+0.09';
+                tableRows[2].style.background = '#f0f9f4';
+              }
+            }
+          }, 1500);
+        }
+      }
+
+      // ── Report Exports Interactivity ──
+      const exportBtns = document.querySelectorAll('.export-options-card .export-btn');
+      if (exportBtns.length >= 3) {
+        // PDF Export
+        exportBtns[0].addEventListener('click', (e) => {
+          e.preventDefault();
+          const reportTitle = document.querySelector('.preview-report-title').textContent;
+          const seqVolume = document.querySelector('.chart-value').textContent + ' ' + document.querySelector('.chart-unit').textContent;
+          const densityText = document.querySelector('.density-label').textContent;
+          const zoneText = document.querySelector('.zone-label').textContent;
+          const idText = document.querySelector('.status-pill.text-id').textContent;
+          
+          const printWindow = window.open('', '_blank');
+          printWindow.document.write(`
+            <html>
+              <head>
+                <title>${reportTitle} - PDF Export</title>
+                <style>
+                  body { font-family: 'Inter', sans-serif; color: #111; padding: 3rem; background: #fff; line-height: 1.5; }
+                  h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; border-bottom: 2px solid #0a2115; padding-bottom: 1rem; color: #0a2115; }
+                  .meta { display: flex; justify-content: space-between; margin: 2rem 0; font-size: 0.9rem; color: #555; }
+                  .metric-box { border: 1px solid #ddd; padding: 1.5rem; border-radius: 4px; margin-bottom: 2rem; background: #faf9f6; }
+                  .metric-title { font-size: 0.8rem; text-transform: uppercase; color: #888; margin-bottom: 0.5rem; }
+                  .metric-val { font-size: 2.5rem; font-weight: 700; color: #0a2115; }
+                  table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+                  th, td { border-bottom: 1px solid #ddd; padding: 1rem; text-align: left; }
+                  th { background: #0a2115; color: #fff; }
+                  .text-right { text-align: right; }
+                </style>
+              </head>
+              <body>
+                <h1>Sustainability Verification & Telemetry Report</h1>
+                <div class="meta">
+                  <div><strong>PROJECT REPORT:</strong> ${reportTitle}</div>
+                  <div><strong>REGISTRY ID:</strong> ${idText}</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-title">SEQUESTRATION VOLUME</div>
+                  <div class="metric-val">${seqVolume}</div>
+                  <div style="font-size: 0.9rem; color: #555; margin-top: 0.5rem;">${zoneText} | ${densityText}</div>
+                </div>
+                <h3>Hyperspectral Imagery Analysis Summary</h3>
+                <p>Our high-resolution satellite verification has detected significant progress in the restoration of native flora across the verified sectors. Using hyperspectral imaging, we have tracked an increase in specialized canopy layers since the Q3 baseline audit.</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>METRIC</th>
+                      <th class="text-right">CURRENT VALUE</th>
+                      <th class="text-right">CHANGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Canopy Height (Avg)</td>
+                      <td class="text-right">28.4m</td>
+                      <td class="text-right">+1.2m</td>
+                    </tr>
+                    <tr>
+                      <td>Soil Carbon Stocks</td>
+                      <td class="text-right">142 tC/ha</td>
+                      <td class="text-right">+4%</td>
+                    </tr>
+                    <tr>
+                      <td>Vegetation Indices (NDVI)</td>
+                      <td class="text-right">0.82</td>
+                      <td class="text-right">+0.05</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <script>
+                  window.onload = function() {
+                    window.print();
+                  }
+                <\/script>
+              </body>
+            </html>
+          `);
+          printWindow.document.close();
+        });
+
+        // Excel Export
+        exportBtns[1].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert("Exporting Data to Excel...\nFile: canopy-audit-data-q4.xlsx\nDownload complete.");
+        });
+
+        // CSV Export
+        exportBtns[2].addEventListener('click', (e) => {
+          e.preventDefault();
+          alert("Exporting Telemetry Data to CSV...\nFile: registry-telemetry-feed.csv\nDownload complete.");
+        });
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  </script>
+  <script src="./contact.js"></script>
+</body>
+</html>

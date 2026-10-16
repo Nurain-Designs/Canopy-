@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy - Project Details</title>
+  <link rel="stylesheet" crossorigin href="./assets/projectDetails-BhVS94P-.css">
+</head>
+<body>
+  
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <nav class="l2-nav">
+      <a href="./index.html" class="l2-logo">Canopy</a>
+      <div class="l2-nav-links">
+        <a href="./marketplace.html" class="active">Marketplace</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./verification.html">Verification</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./team.html">Team</a>
+      </div>
+      <div class="l2-nav-actions">
+        <div class="mp-search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" placeholder="Search projects...">
+        </div>
+        <button class="l2-btn impact-calc">Impact Calculator</button>
+        <div class="l2-nav-icons" style="display: flex; align-items: center; margin-left: 0.5rem;">
+          <img src="./images/media__1782453860642.png" alt="Nav Icons" style="height: 36px; object-fit: contain;">
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="pd-content">
+      
+      <!-- Hero Section -->
+      <section class="pd-hero fade-in-section slide-up" style="width: 100%; height: 600px; position: relative; overflow: hidden;">
+        <img src="./images/hero_jurua.jpg" alt="Forest" class="pd-hero-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: bottom;">
+      </section>
+
+      <!-- Info Bar -->
+      <div class="pd-infobar fade-in-section">
+        <div class="pd-infobar-left">
+          <div class="pd-info-item">
+            <span>CURRENT SPOT PRICE</span>
+            <span>$<span class="count-up" data-target="18.50" data-format="currency_no_symbol">0.00</span> <span style="font-size:0.9rem; font-weight:400; color:#555;">/ tonne</span></span>
+          </div>
+          <div class="pd-info-item">
+            <span>AVAILABLE INVENTORY</span>
+            <span><span class="count-up" data-target="124500" data-format="number">0</span> <span style="font-size:0.9rem; font-weight:400; color:#555;">tCO2e</span></span>
+          </div>
+        </div>
+        <div class="pd-infobar-right">
+          <input type="number" id="pd-volume-input" class="pd-volume-input" placeholder="Volume (Tonnes)">
+          <button class="pd-btn-solid" onclick="window.location.href='./quantity.html'">Secure Allocation</button>
+        </div>
+      </div>
+
+      <!-- Guardian Section -->
+      <section class="pd-section pd-guardian">
+        <div class="pd-guardian-img-wrapper fade-in-section slide-right">
+          <!-- Portrait Image -->
+          <img src="./images/guardian_portrait.png" alt="Guardian Portrait" class="pd-guardian-img">
+          <div class="pd-guardian-quote">
+            <p>"This forest is our legacy. With Canopy's verification, the world finally sees the value of the standing trees that we have guarded for generations."</p>
+            <strong>Raoni Metuktire</strong>
+            <span>Chief of Community Council</span>
+          </div>
+        </div>
+        <div class="pd-guardian-content fade-in-section slide-left">
+          <div class="pd-section-label">NARRATIVE DRIVEN STEWARDSHIP</div>
+          <h2 class="pd-section-title">Empowering Guardians of the Amazon</h2>
+          <p class="pd-guardian-desc">The Upper Juruá Basin project is more than just a carbon sink; it is a vital ecological corridor managed by indigenous communities whose ancestors have protected these lands for millennia.</p>
+          <p class="pd-guardian-desc">By integrating ancient knowledge with high-resolution satellite monitoring, we've created a defensive shield against illegal logging and mining. Your support directly funds community-led ranger patrols, sustainable agroforestry workshops, and satellite-linked detection equipment.</p>
+          <div class="pd-guardian-stats">
+            <div class="pd-g-stat">
+              <h3>250</h3>
+              <span>LOCAL RANGERS TRAINED</span>
+            </div>
+            <div class="pd-g-stat">
+              <h3>12</h3>
+              <span>COMMUNITY HUBS BUILT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Dashboard -->
+      <section class="pd-section pd-dashboard-section">
+        <div class="pd-dashboard-header fade-in-section slide-up">
+          <div>
+            <div class="pd-section-label">VERIFIED REAL-TIME PERFORMANCE</div>
+            <h2 class="pd-section-title">Current Impact Dashboard</h2>
+          </div>
+          <button class="pd-btn-outline" onclick="window.location.href='./dashboard.html'" style="display: flex; align-items: center; gap: 0.5rem; border-radius: 0; cursor:pointer;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            Detailed Data Feed
+          </button>
+        </div>
+        
+        <div class="pd-dashboard-grid">
+          <!-- Card 1 -->
+          <div class="pd-card fade-in-section slide-right" style="border-radius: 0;">
+            <div class="pd-section-label" style="margin-bottom: 1rem;">FOREST AREA PRESERVED</div>
+            <div class="pd-card-value"><span class="count-up" data-target="45200" data-format="number">0</span> <span style="font-size: 1rem; color:#333; font-family:var(--font-serif); font-weight: 500;">ha</span></div>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+            <p style="font-size: 0.8rem; color: #555; line-height: 1.5;">Equivalent to 63,000 professional soccer fields of pristine primary canopy protected since 2018.</p>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="pd-card fade-in-section slide-up" style="border-radius: 0;">
+            <div class="pd-section-label" style="margin-bottom: 1.5rem;">CARBON SEQUESTRATION (MTC02E)</div>
+            <div class="pd-card-chart" style="display: flex; align-items: flex-end; gap: 4px; height: 120px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+              <div class="pd-bar" style="height: 30%; background: #e0e5e2; width: 100%;"></div>
+              <div class="pd-bar" style="height: 40%; background: #c5d3cb; width: 100%;"></div>
+              <div class="pd-bar" style="height: 50%; background: #a8c1b4; width: 100%;"></div>
+              <div class="pd-bar" style="height: 60%; background: #a8c1b4; width: 100%;"></div>
+              <div class="pd-bar" style="height: 70%; background: #94b2a3; width: 100%;"></div>
+              <div class="pd-bar" style="height: 80%; background: #94b2a3; width: 100%;"></div>
+              <div class="pd-bar" style="height: 100%; background: #0a2115; width: 100%;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #777; margin-top: 0.5rem; text-transform: uppercase; font-family: var(--font-sans); letter-spacing: 1px;">
+              <span>2020</span>
+              <span>Present</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pd-card pd-card-dark fade-in-section slide-left" style="border-radius: 0; background: #0e4933; color: #fff;">
+            <div class="pd-section-label" style="color: #6a9b7e; margin-bottom: 1rem;">SPECIES PROTECTED</div>
+            <div class="pd-card-value" style="color: #fff; margin-bottom: 1rem;"><span class="count-up" data-target="1240" data-format="number">0</span>+</div>
+            <div style="display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.8rem; font-size: 0.85rem; color: #a3ccb4;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                45 Keystone Mammals
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.8rem; font-size: 0.85rem; color: #a3ccb4;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 22h3a2 2 0 0 0 2-2v-3"></path><path d="M21 17L12 8l-9 9"></path></svg>
+                312 Bird Species
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAR Timeline -->
+      <section class="pd-section" style="padding-top: 2rem;">
+        <div class="pd-timeline-header fade-in-section" style="text-align: center; margin-bottom: 2rem;">
+          <div class="pd-section-label">ORBITAL AUDITING</div>
+          <h2 class="pd-section-title">Synthetic Aperture Radar (SAR) Timeline</h2>
+          <p style="color: #555; font-size: 0.95rem; max-width: 600px; margin: 0 auto;">Observe the real-time detection of encroachment attempts and our immediate intervention response.</p>
+        </div>
+        
+        <div class="pd-timeline-wrapper fade-in-section slide-up" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <!-- Map Image Container -->
+          <div style="position: relative; width: 100%; height: 600px; overflow: hidden;">
+            <img src="./images/sar_map.jpg" alt="SAR Map" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            
+            <!-- Timestamp Overlay -->
+            <div style="position: absolute; bottom: 2rem; left: 2rem; background: rgba(10, 25, 15, 0.85); padding: 1.5rem 2rem; color: #fff; backdrop-filter: blur(4px);">
+              <div style="font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #e0e5e2; margin-bottom: 0.6rem;">TIMESTAMP</div>
+              <div style="font-size: 1.15rem; font-family: var(--font-sans); font-weight: 400; letter-spacing: 0.5px;">2026-05-12 : 14:30 UTC</div>
+            </div>
+          </div>
+          
+          <!-- Status Bar -->
+          <div style="display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 1.2rem 2rem; font-size: 0.85rem; font-family: var(--font-sans); border-top: 1px solid #eaeaea;">
+            <div style="display: flex; align-items: center; gap: 0.6rem; font-weight: 500; color: #222;">
+              <span style="width: 8px; height: 8px; background: #000; border-radius: 50%; display: inline-block;"></span>
+              Active Monitoring: 100% Coverage
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.6rem; font-weight: 500; color: #222;">
+              <span style="width: 8px; height: 8px; background: #d32f2f; border-radius: 50%; display: inline-block;"></span>
+              Alert: Prevented Encroachment (3ha)
+            </div>
+            <div>
+              <a href="#" id="live-feed-link" style="color: #0a2115; font-weight: 600; text-decoration: underline; text-underline-offset: 4px;">Request Live Feed Access</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Verification & Materials -->
+      <section class="pd-section pd-verification" style="background: transparent; border: none; padding-top: 4rem; padding-bottom: 6rem;">
+        <!-- Left Col: Verification Center -->
+        <div class="pd-v-col fade-in-section slide-right">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+            <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--l2-primary); font-weight: 500; margin: 0;">Verification Center</h3>
+            <div style="background: #fcf1d8; color: #b08c2a; padding: 0.3rem 0.8rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem; border-radius: 4px;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+              CERTIFIED AUDIT
+            </div>
+          </div>
+          <div class="pd-v-list">
+            <div class="pd-v-item-new">
+              <span>Annual Audit Report - 2025</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="pd-v-item-new">
+              <span>Sentinel-2 Spectral Analysis History</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="pd-v-item-new">
+              <span>Community Payment Distribution Ledger</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Col: Project Materials -->
+        <div class="pd-v-col fade-in-section slide-left">
+          <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--l2-primary); font-weight: 500; margin-bottom: 2rem;">Project Materials</h3>
+          <div class="pd-v-list">
+            <div class="pd-m-item">
+              <div class="pd-m-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div class="pd-m-content">
+                <h4>Carbon Methodology</h4>
+                <span>PDF • 12.4 MB</span>
+              </div>
+              <svg class="pd-m-download" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <div class="pd-m-item">
+              <div class="pd-m-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="pd-m-content">
+                <h4>High-Res Basin Maps</h4>
+                <span>ZIP • 48.1 MB</span>
+              </div>
+              <svg class="pd-m-download" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <div class="pd-m-item">
+              <div class="pd-m-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+              </div>
+              <div class="pd-m-content">
+                <h4>Social Safeguard Policy</h4>
+                <span>PDF • 3.2 MB</span>
+              </div>
+              <svg class="pd-m-download" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- End Page Content -->
+
+    <!-- Footer -->
+    <footer class="l2-footer fade-in-section slide-up" style="background: #0a2115; color: #fff;">
+      <div class="l2-f-left">
+        <h4><a href="./index.html" style="text-decoration: none; color: inherit; font-family: 'Playfair Display', serif; font-size: 1.6rem;">Canopy</a></h4>
+        <p>&copy; 2026 Canopy. All rights reserved. Precise<br/>Satellite Verification for Global Reforestation.</p>
+      </div>
+      <div class="l2-f-links">
+        <a href="./methodology.html">Sustainability Methodology</a>
+        <a href="./audit.html">Audit Trails</a>
+        <a href="./privacy.html">Terms of Service</a>
+        <a href="./status.html">Security Whitepaper</a>
+        <a href="./registry.html">Carbon Registry API</a>
+      </div>
+    </footer>
+
+  </div>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const volumeInput = document.getElementById('pd-volume-input');
+      const secureBtn = document.querySelector('.pd-btn-solid');
+      if (secureBtn && volumeInput) {
+        secureBtn.removeAttribute('onclick'); // remove inline redirect
+        secureBtn.addEventListener('click', () => {
+          const val = volumeInput.value.trim();
+          if (val && !isNaN(val)) {
+            localStorage.setItem('canopy_checkout_volume', val);
+          }
+          window.location.href = './quantity.html';
+        });
+      }
+      // Wire Live Feed link to open the contact modal
+      const liveFeedLink = document.getElementById('live-feed-link');
+      if (liveFeedLink) {
+        liveFeedLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (typeof window.canopyOpenContactModal === 'function') {
+            window.canopyOpenContactModal(e);
+          }
+        });
+      }
+    });
+  </script>
+  <script src="./landing2.js"></script>
+  <script src="./contact.js"></script>
+</body>
+</html>
+

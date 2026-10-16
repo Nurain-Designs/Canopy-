@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canopy - Quantity Selection</title>
+  <link rel="stylesheet" crossorigin href="./assets/quantity-CG_UFb_R.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./marketplace.html" class="active">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-solid-nav impact-calc">Impact Calculator</button>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <div style="width: 32px; height: 32px; background: #ddd; border-radius: 50%; overflow: hidden;">
+        <img src="./images/guardian_portrait.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stepper -->
+  <div class="p-stepper fade-in-section slide-up">
+    <a href="./purchase.html" class="p-step completed" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      SELECT PROJECT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./quantity.html" class="p-step active" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">2</div>
+      QUANTITY
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./impact.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">3</div>
+      IMPACT
+    </a>
+    <div class="p-step-line"></div>
+    <a href="./summary.html" class="p-step pending" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="p-step-icon">4</div>
+      SUMMARY
+    </a>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="q-layout">
+    
+    <!-- Left Col -->
+    <div class="q-col-left fade-in-section slide-right">
+      <div class="q-active-card">
+        <span class="q-badge">ACTIVE SELECTION</span>
+        <img src="./images/amazon.png" alt="Amazon Basin" class="q-active-img" style="cursor: pointer;" onclick="window.location.href='./project-details.html'">
+        <h2 class="q-active-title"><a href="./project-details.html" style="text-decoration: none; color: inherit;">Amazon Basin Restoration</a></h2>
+        <div class="q-active-meta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Verra Certified Project #2381
+        </div>
+        <div class="q-active-footer">
+          <div>
+            <div class="q-price-label">UNIT PRICE</div>
+            <div class="q-price-val">$28.50<span style="font-size:0.75rem; color:#888; font-weight:500;">/tonne</span></div>
+          </div>
+          <button class="q-change-btn" onclick="window.location.href='./project-details.html'">Change Project</button>
+        </div>
+      </div>
+      
+      <div class="q-summary-box fade-in-section slide-up">
+        "This selection funds direct reforestation of degraded pastures in the Xingu Basin, creating biological corridors for endangered fauna."
+      </div>
+    </div>
+
+    <!-- Center Col -->
+    <div class="q-col-main fade-in-section slide-up">
+      <h1 class="q-main-title">Define Your Climate Commitment</h1>
+      <p class="q-main-desc">Adjust your carbon credit allocation to see immediate projected environmental and social outcomes across our verified metrics.</p>
+
+      <div class="q-calculator">
+        <div class="q-gold-dot"></div>
+        
+        <div class="q-visual-box">
+          <div class="q-vb-label">ALLOCATION</div>
+          <div class="q-vb-val">500</div>
+          <div class="q-vb-unit">Tonnes CO<sub>2</sub></div>
+        </div>
+
+        <div class="q-metrics-grid">
+          <div class="q-metric-card">
+            <div class="q-mc-label">CREDITS</div>
+            <div class="q-mc-val">500</div>
+          </div>
+          <div class="q-metric-card">
+            <div class="q-mc-label">INVESTMENT</div>
+            <div class="q-mc-val">$14,250</div>
+          </div>
+          <div class="q-metric-card">
+            <div class="q-mc-label">FOREST (HA)</div>
+            <div class="q-mc-val">125</div>
+          </div>
+          <div class="q-metric-card">
+            <div class="q-mc-label">COMMUNITIES</div>
+            <div class="q-mc-val">8</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="q-control-panel fade-in-section slide-up">
+        <div class="q-cp-header">
+          <div class="q-input-group">
+            <div class="q-input-label">PRECISE AMOUNT</div>
+            <div class="q-input-box">
+              <input type="number" id="q-amount-input" value="500">
+              <span>Tonnes</span>
+            </div>
+          </div>
+          <div class="q-total-group">
+            <div class="q-input-label" style="text-align: right; margin-bottom:0.3rem;">TOTAL CARBON OFFSETTING</div>
+            <div class="q-total-val">500.00 MT</div>
+          </div>
+        </div>
+
+        <div class="q-slider-container">
+          <div class="q-slider-track"></div>
+          <div class="q-slider-thumb"></div>
+        </div>
+        <div class="q-slider-labels">
+          <span>50 T</span>
+          <span>2,500 T</span>
+          <span>5,000 T</span>
+          <span>7,500 T</span>
+          <span>10,000 T</span>
+        </div>
+      </div>
+
+      <div class="q-actions fade-in-section slide-up">
+        <button class="q-btn-back" onclick="window.location.href='./purchase.html'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to Selection
+        </button>
+        <button class="q-btn-next" onclick="window.location.href='./impact.html'">Continue to Impact Analysis</button>
+      </div>
+    </div>
+
+    <!-- Right Col -->
+    <div class="q-col-right fade-in-section slide-left">
+      
+      <div class="q-sidebar-card">
+        <div class="q-sb-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          Industry Benchmarks
+        </div>
+        <div class="q-sb-row">
+          <div class="q-sb-label">SME AVERAGE</div>
+          <div class="q-sb-val">250 — 800 Tonnes</div>
+        </div>
+        <div class="q-sb-row" style="background: transparent; border: 1px solid var(--c-border); margin-bottom: 0;">
+          <div class="q-sb-label">NET ZERO 2030 GOAL</div>
+          <div class="q-sb-val">1,200 Tonnes</div>
+          <div class="q-sb-desc">Based on your carbon footprint audit.</div>
+        </div>
+      </div>
+
+      <div class="q-tip-card">
+        <div class="q-tip-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--c-gold)" stroke-width="2"><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4 12H2"></path><path d="M22 12h-2"></path><path d="M19.07 4.93l-1.41 1.41"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 19.07l-1.41-1.41"></path><path d="M6.34 6.34l-1.41-1.41"></path><circle cx="12" cy="12" r="4"></circle></svg>
+          Sustainability Tip
+        </div>
+        <div class="q-tip-text">
+          To maximize your ecological footprint, consider a 5-year multi-stage purchase. This allows Canopy to lock in reforestation contracts ahead of market surges, increasing impact by up to 15%.
+        </div>
+        <a href="#" class="q-tip-link">
+          LEARN ABOUT FORWARD PRICING
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="q-image-card">
+        <img src="./images/empower_plant.png" alt="Local Communities">
+        <div class="q-image-card-text">Empowering Local<br/>Communities</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="l2-footer fade-in-section slide-up">
+    <div class="l2-f-left">
+      <h4><a href="./index.html">Canopy</a></h4>
+      <p>&copy; 2026 Canopy. All rights reserved. Precise<br/>Satellite Verification for Global Reforestation.</p>
+    </div>
+    <div class="l2-f-links">
+      <a href="./methodology.html">Sustainability Methodology</a>
+      <a href="./audit.html">Audit Trails</a>
+      <a href="./registry.html">Terms of Service</a>
+      <a href="./registry.html">Security Whitepaper</a>
+      <a href="./registry.html">Carbon Registry API</a>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in-section').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <!-- Interactive Slider & Calculation Logic -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const unitPrice = 28.50;
+      const minQty = 50;
+      const maxQty = 10000;
+
+      // DOM Elements
+      const qVbVal = document.querySelector('.q-vb-val');
+      const creditsCard = document.querySelector('.q-metrics-grid .q-metric-card:nth-child(1) .q-mc-val');
+      const investmentCard = document.querySelector('.q-metrics-grid .q-metric-card:nth-child(2) .q-mc-val');
+      const forestCard = document.querySelector('.q-metrics-grid .q-metric-card:nth-child(3) .q-mc-val');
+      const communitiesCard = document.querySelector('.q-metrics-grid .q-metric-card:nth-child(4) .q-mc-val');
+      const inputEl = document.getElementById('q-amount-input');
+      const totalVal = document.querySelector('.q-total-val');
+      const sliderContainer = document.querySelector('.q-slider-container');
+      const thumb = document.querySelector('.q-slider-thumb');
+
+      // Prevent default on all impact calculator elements
+      document.querySelectorAll('.impact-calc').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      });
+
+      function updateMetrics(tonnes) {
+        tonnes = Math.max(minQty, Math.min(maxQty, tonnes));
+        
+        // Save to localStorage
+        localStorage.setItem('canopy_checkout_volume', tonnes);
+
+        // Update displays
+        const roundedTonnes = Math.round(tonnes);
+        if (qVbVal) qVbVal.textContent = roundedTonnes.toLocaleString();
+        if (creditsCard) creditsCard.textContent = roundedTonnes.toLocaleString();
+        
+        if (investmentCard) {
+          const invest = roundedTonnes * unitPrice;
+          investmentCard.textContent = '$' + Math.round(invest).toLocaleString();
+        }
+
+        if (forestCard) {
+          const forest = Math.round(roundedTonnes * 0.25);
+          forestCard.textContent = forest.toLocaleString();
+        }
+
+        if (communitiesCard) {
+          const comm = Math.max(1, Math.round(roundedTonnes / 62.5));
+          communitiesCard.textContent = comm.toLocaleString();
+        }
+
+        if (inputEl && document.activeElement !== inputEl) {
+          inputEl.value = roundedTonnes;
+        }
+
+        if (totalVal) {
+          totalVal.textContent = tonnes.toFixed(2) + ' MT';
+        }
+
+        if (thumb) {
+          const percent = ((tonnes - minQty) / (maxQty - minQty)) * 100;
+          thumb.style.left = percent + '%';
+        }
+      }
+
+      // Slider drag / click interaction
+      if (sliderContainer && thumb) {
+        let isDragging = false;
+
+        function handlePointer(clientX) {
+          const rect = sliderContainer.getBoundingClientRect();
+          let pct = (clientX - rect.left) / rect.width;
+          pct = Math.max(0, Math.min(1, pct));
+          const val = minQty + pct * (maxQty - minQty);
+          // Round to nearest 10 for smoothness, but keep accurate values
+          const roundedVal = Math.round(val / 10) * 10;
+          updateMetrics(roundedVal);
+        }
+
+        thumb.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          e.preventDefault();
+        });
+
+        sliderContainer.addEventListener('mousedown', (e) => {
+          if (e.target !== thumb) {
+            handlePointer(e.clientX);
+            isDragging = true;
+          }
+        });
+
+        document.addEventListener('mousemove', (e) => {
+          if (isDragging) handlePointer(e.clientX);
+        });
+
+        document.addEventListener('mouseup', () => {
+          isDragging = false;
+        });
+
+        // Touch support
+        thumb.addEventListener('touchstart', (e) => {
+          isDragging = true;
+          e.preventDefault();
+        }, { passive: false });
+
+        sliderContainer.addEventListener('touchstart', (e) => {
+          if (e.target !== thumb) {
+            handlePointer(e.touches[0].clientX);
+            isDragging = true;
+          }
+        }, { passive: true });
+
+        document.addEventListener('touchmove', (e) => {
+          if (isDragging) handlePointer(e.touches[0].clientX);
+        }, { passive: true });
+
+        document.addEventListener('touchend', () => {
+          isDragging = false;
+        });
+      }
+
+      // Input changes
+      if (inputEl) {
+        inputEl.addEventListener('input', (e) => {
+          const val = parseFloat(e.target.value);
+          if (!isNaN(val)) {
+            updateMetrics(val);
+          }
+        });
+
+        inputEl.addEventListener('blur', (e) => {
+          let val = parseFloat(e.target.value);
+          if (isNaN(val) || val < minQty) {
+            val = minQty;
+          } else if (val > maxQty) {
+            val = maxQty;
+          }
+          updateMetrics(val);
+        });
+      }
+
+      // Load initial state
+      let initialVol = parseFloat(localStorage.getItem('canopy_checkout_volume'));
+      if (isNaN(initialVol)) {
+        initialVol = 500;
+      }
+      updateMetrics(initialVol);
+    });
+  </script>
+  <script src="./contact.js"></script>
+</body>
+</html>
+

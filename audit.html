@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy - Audit Transparency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .page-content { max-width:1200px; margin:0 auto; padding:3rem 5%; display:flex; flex-direction:column; gap:3rem; }
+    .hero-badge { background:rgba(12,43,29,0.08); color:#0c2b1d; border:1px solid rgba(12,43,29,0.2); padding:.35rem .75rem; font-size:.75rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; border-radius:40px; display:inline-block; }
+    .audit-timeline { display:flex; flex-direction:column; gap:0; position:relative; }
+    .audit-timeline::before { content:''; position:absolute; left:28px; top:0; bottom:0; width:2px; background:linear-gradient(to bottom,#0c2b1d,rgba(12,43,29,.1)); }
+    .timeline-entry { display:flex; gap:2rem; position:relative; padding-bottom:2.5rem; }
+    .timeline-dot { width:56px; height:56px; min-width:56px; border-radius:50%; background:#0c2b1d; display:flex; align-items:center; justify-content:center; z-index:1; }
+    .timeline-dot svg { width:22px; height:22px; color:#fff; }
+    .timeline-body { background:#fff; border:1px solid rgba(12,43,29,0.1); border-radius:12px; padding:1.5rem; flex:1; }
+    .timeline-body h3 { font-family:'Playfair Display',serif; font-size:1.2rem; color:#0c2b1d; margin-bottom:.4rem; }
+    .timeline-body .date { font-size:.75rem; color:#999; font-weight:500; letter-spacing:.5px; text-transform:uppercase; margin-bottom:.75rem; }
+    .timeline-body p { font-size:.85rem; color:#555; line-height:1.6; margin-bottom:.75rem; }
+    .timeline-badge { display:inline-flex; align-items:center; gap:.35rem; padding:.25rem .6rem; border-radius:20px; font-size:.7rem; font-weight:700; text-transform:uppercase; }
+    .timeline-badge.approved { background:rgba(12,43,29,0.08); color:#0c2b1d; border:1px solid rgba(12,43,29,0.2); }
+    .timeline-badge.pending { background:#fef3c7; color:#92400e; border:1px solid #fde68a; }
+    .auditors-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5rem; }
+    .auditor-card { background:#fff; border:1px solid rgba(12,43,29,0.1); border-radius:12px; padding:1.5rem; }
+    .auditor-card h4 { font-family:'Playfair Display',serif; font-size:1.1rem; color:#0c2b1d; margin-bottom:.3rem; }
+    .auditor-card p { font-size:.82rem; color:#666; line-height:1.5; }
+    .auditor-logo { font-size:.7rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase; color:#0c2b1d; background:rgba(12,43,29,0.08); padding:.2rem .5rem; border-radius:4px; display:inline-block; margin-bottom:.75rem; }
+    .section-title { font-family:'Playfair Display',serif; font-size:1.8rem; color:#0c2b1d; margin-bottom:1.5rem; }
+  </style>
+  <link rel="stylesheet" crossorigin href="./assets/registry-D2vDdA4G.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <nav class="l2-nav">
+    <a href="./index.html" class="l2-logo">Canopy</a>
+    <div class="l2-nav-links">
+      <a href="./marketplace.html">Marketplace</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./verification.html">Verification</a>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="./team.html">Team</a>
+    </div>
+    <div class="l2-nav-actions">
+      <button class="l2-btn-solid" onclick="window.location.href='./marketplace.html'">Explore Terrain</button>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <header style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:1rem;">
+      <div class="hero-badge">Third-Party Validated</div>
+      <h1 style="font-family:'Playfair Display',serif;font-size:2.8rem;color:#0c2b1d;font-weight:500;max-width:800px;">Audit Transparency Center</h1>
+      <p style="color:#666;font-size:1.05rem;max-width:620px;line-height:1.6;">Every carbon asset in the Canopy registry undergoes rigorous, independent third-party verification. This center publishes the full audit lifecycle in real time.</p>
+    </header>
+
+    <!-- Stats -->
+    <section class="reg-stats-grid">
+      <div class="reg-stat-card">
+        <span class="reg-stat-label">Audits Completed</span>
+        <span class="reg-stat-val"><span class="count-up" data-target="38" data-format="number">0</span></span>
+        <span class="reg-stat-sub">Since 2021 inception</span>
+      </div>
+      <div class="reg-stat-card">
+        <span class="reg-stat-label">Average Audit Duration</span>
+        <span class="reg-stat-val"><span class="count-up" data-target="14" data-format="number">0</span> <span style="font-size:1.2rem;font-weight:400;color:#666;">days</span></span>
+        <span class="reg-stat-sub">Fastest in industry</span>
+      </div>
+      <div class="reg-stat-card">
+        <span class="reg-stat-label">Credits Verified</span>
+        <span class="reg-stat-val"><span class="count-up" data-target="142800" data-format="number">0</span></span>
+        <span class="reg-stat-sub">tCO2e across all biomes</span>
+      </div>
+    </section>
+
+    <!-- Audit Timeline -->
+    <section>
+      <h2 class="section-title">Active Audit Lifecycle Timeline</h2>
+      <div class="audit-timeline">
+        <div class="timeline-entry">
+          <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z" fill="currentColor"></path></svg></div>
+          <div class="timeline-body">
+            <div class="date">January 2024</div>
+            <h3>Amazon Basin X — VCS Validation</h3>
+            <p>South Pole Group completed full ground-truth validation of the Amazon Basin X project using 2023 LIDAR scans and field transect surveys across 42,000 ha.</p>
+            <span class="timeline-badge approved">✓ Approved</span>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z" fill="currentColor"></path></svg></div>
+          <div class="timeline-body">
+            <div class="date">March 2024</div>
+            <h3>Borneo Peatlands — Gold Standard Verification</h3>
+            <p>Bureau Veritas confirmed peatland hydrology management practices and certified the community co-benefit scoring for the Borneo project.</p>
+            <span class="timeline-badge approved">✓ Approved</span>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot" style="background:#92400e;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+          <div class="timeline-body">
+            <div class="date">In Progress — Q3 2024</div>
+            <h3>Congo Basin — Biodiversity Corridor Audit</h3>
+            <p>ERM Group has commenced the biodiversity corridor audit for the Congo Basin expansion zone. Species count verification and soil carbon sampling underway.</p>
+            <span class="timeline-badge pending">⏳ In Review</span>
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 6v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V6l-9-4zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z" fill="currentColor"></path></svg></div>
+          <div class="timeline-body">
+            <div class="date">June 2023</div>
+            <h3>Sumatra Rainforest V — ISO 14064-2 Audit</h3>
+            <p>TÜV Rheinland completed the annual ISO 14064-2 compliance audit for the Sumatra project with a finding of zero material discrepancies.</p>
+            <span class="timeline-badge approved">✓ Approved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third-Party Auditors -->
+    <section>
+      <h2 class="section-title">Approved Third-Party Auditors</h2>
+      <div class="auditors-grid">
+        <div class="auditor-card"><div class="auditor-logo">South Pole Group</div><h4>South Pole Group AG</h4><p>Accredited VCS and Gold Standard auditor specializing in tropical forest REDD+ projects and community carbon programs.</p></div>
+        <div class="auditor-card"><div class="auditor-logo">Bureau Veritas</div><h4>Bureau Veritas Carbon</h4><p>ISO 14065 accredited validation and verification body performing rigorous field and satellite telemetry cross-checks.</p></div>
+        <div class="auditor-card"><div class="auditor-logo">TÜV Rheinland</div><h4>TÜV Rheinland Group</h4><p>Globally recognized audit firm conducting ISO 14064-2 and 14064-3 greenhouse gas verification for all Canopy projects.</p></div>
+        <div class="auditor-card"><div class="auditor-logo">ERM Group</div><h4>Environmental Resources Mgmt.</h4><p>ERM conducts biodiversity corridor surveys and ecological impact assessments required for Gold Standard CommunityMark compliance.</p></div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="l2-footer">
+    <div class="l2-f-left"><h4><a href="./index.html">Canopy</a></h4><p>&copy; 2026 Canopy Global. All rights reserved.</p></div>
+    <div class="l2-f-links">
+      <div><a href="./sustainability.html">Sustainability Resources</a><a href="./audit.html">Audit Transparency</a><a href="./methodology.html">Methodology</a></div>
+      <div><a href="./registry.html">Registry</a><a href="./privacy.html">Privacy Policy</a><a href="#">Contact</a></div>
+    </div>
+  </footer>
+</div>
+<script src="./landing2.js"></script>
+<script src="./contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+ "biodapt-1440": {
+  "steps": [
+   "demo badge: 1",
+   "recommendation: Polyhydroxyalkanoates (PHA)",
+   "error message shown: false"
+  ],
+  "backendRequests": 0,
+  "pageErrors": []
+ },
+ "skillbridge-1440": {
+  "steps": [
+   "explore → dashboard",
+   "sample analysis labelled: true",
+   "roadmap after reload: roadmap/ len=1224"
+  ],
+  "backendRequests": 0,
+  "pageErrors": []
+ },
+ "biodapt-390": {
+  "steps": [
+   "demo badge: 1",
+   "recommendation: Polyhydroxyalkanoates (PHA)",
+   "error message shown: false"
+  ],
+  "backendRequests": 0,
+  "pageErrors": []
+ },
+ "skillbridge-390": {
+  "steps": [
+   "explore → dashboard",
+   "sample analysis labelled: true",
+   "roadmap after reload: roadmap/ len=1010"
+  ],
+  "backendRequests": 0,
+  "pageErrors": []
+ }
+}

@@ -2,7 +2,7 @@ name: Verify demo URLs
 on:
   push:
     branches: [claude/demo-verification]
-    paths: ['urls*.json', 'verify.mjs', '.github/workflows/verify.yml']
+    paths: ['urls*.json', 'verify.mjs', 'flows.mjs', '.github/workflows/verify.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
       - run: npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
-      - run: node verify.mjs "$(ls -t urls*.json | head -1)" report
+      - run: node verify.mjs urls.json report && node flows.mjs
       - name: Commit results
         run: |
           git config user.name "demo-verifier"

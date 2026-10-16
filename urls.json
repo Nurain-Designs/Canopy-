@@ -1,82 +1,164 @@
 {
  "cartographer": {
   "url": "https://cartographer-frontend-lac.vercel.app",
-  "title": "Cartographer"
+  "title": "Cartographer",
+  "paths": [
+   "world-graph.html",
+   "timeline.html"
+  ]
  },
  "fieldmind": {
   "url": "https://field-mind-sooty.vercel.app",
-  "title": "FieldMind"
+  "title": "FieldMind",
+  "paths": []
  },
- "aura": {
+ "aura-vercel": {
   "url": "https://aura-implementation.vercel.app",
-  "title": "AURA"
- },
- "medconnect": {
-  "url": "https://nurain-designs.github.io/medconnect/",
-  "title": "MedConnect"
- },
- "pressroom": {
-  "url": "https://nurain-designs.github.io/pressroom/",
-  "title": "pressroom"
+  "title": "AURA",
+  "paths": [
+   "about"
+  ]
  },
  "verdana": {
   "url": "https://my-garden-verdena-leaf.vercel.app",
-  "title": "VERDANA"
- },
- "onyx": {
-  "url": "https://nurain-designs.github.io/onyx-hotel/",
-  "title": "ONYX"
- },
- "pep": {
-  "url": "https://nurain-designs.github.io/Pep/",
-  "title": "Pep"
+  "title": "VERDANA",
+  "paths": []
  },
  "morph": {
   "url": "https://mosaic-pi-three.vercel.app",
-  "title": "Morph"
+  "title": "Morph",
+  "paths": []
  },
  "diet-o": {
   "url": "https://diet-o-frontend.vercel.app",
-  "title": "Diet-o"
+  "title": "Diet-o",
+  "paths": []
  },
  "drift": {
   "url": "https://cinematic-ui-mauve.vercel.app",
-  "title": "Drift"
- },
- "vela": {
-  "url": "https://nurain-designs.github.io/Vela/",
-  "title": "vela"
- },
- "homo-interior-ai": {
-  "url": "https://nurain-designs.github.io/HOMO-Interior-AI/",
-  "title": "HOMO"
+  "title": "Drift",
+  "paths": []
  },
  "lumeon": {
   "url": "https://lumeon-three.vercel.app",
-  "title": "Lumeon"
- },
- "aura-os": {
-  "url": "https://nurain-designs.github.io/aura-website/",
-  "title": "AURA"
- },
- "halo-os": {
-  "url": "https://nurain-designs.github.io/-halo-os-landing-page/",
-  "title": "Halo OS"
+  "title": "Lumeon",
+  "paths": [
+   "about.html",
+   "product.html"
+  ]
  },
  "gridline": {
   "url": "https://gridline-sports-52yq.vercel.app",
-  "title": "Gridline"
+  "title": "Gridline",
+  "paths": [
+   "#/about",
+   "#/admin"
+  ]
  },
  "mobile-dev-studios": {
   "url": "https://mobile-dev-21.vercel.app",
-  "title": "Mobile Dev"
+  "title": "Mobile Dev",
+  "paths": []
+ },
+ "aura": {
+  "url": "https://nurain-designs.github.io/Aura-implementation-/",
+  "title": "AURA",
+  "paths": [
+   "about/",
+   "services/",
+   "contact/"
+  ]
+ },
+ "canopy": {
+  "url": "https://nurain-designs.github.io/Canopy-/",
+  "title": "CANOPY",
+  "paths": [
+   "marketplace.html",
+   "landing2.html"
+  ]
+ },
+ "conduit": {
+  "url": "https://nurain-designs.github.io/Conduit-Frontend/",
+  "title": "Conduit",
+  "paths": [
+   "pricing.html",
+   "docs.html"
+  ]
+ },
+ "chronicle": {
+  "url": "https://nurain-designs.github.io/chronicle--frontend-/",
+  "title": "Chronicle",
+  "paths": []
+ },
+ "dttio": {
+  "url": "https://nurain-designs.github.io/Dttio-Art-Digital-Agency-/",
+  "title": "Dttio",
+  "paths": [
+   "#/shop",
+   "#/tools/app"
+  ]
+ },
+ "biodapt": {
+  "url": "https://nurain-designs.github.io/BioDapt---Fullstack/",
+  "title": "BioDapt",
+  "paths": []
+ },
+ "skillbridge": {
+  "url": "https://nurain-designs.github.io/SkillBridge-frontend--12/",
+  "title": "SkillBridge",
+  "paths": [
+   "dashboard/",
+   "roadmap/"
+  ]
+ },
+ "medconnect": {
+  "url": "https://nurain-designs.github.io/medconnect/",
+  "title": "MedConnect",
+  "paths": []
+ },
+ "pressroom": {
+  "url": "https://nurain-designs.github.io/pressroom/",
+  "title": "pressroom",
+  "paths": []
+ },
+ "onyx": {
+  "url": "https://nurain-designs.github.io/onyx-hotel/",
+  "title": "ONYX",
+  "paths": []
+ },
+ "pep": {
+  "url": "https://nurain-designs.github.io/Pep/",
+  "title": "Pep",
+  "paths": []
+ },
+ "vela": {
+  "url": "https://nurain-designs.github.io/Vela/",
+  "title": "vela",
+  "paths": []
+ },
+ "homo-interior-ai": {
+  "url": "https://nurain-designs.github.io/HOMO-Interior-AI/",
+  "title": "HOMO",
+  "paths": []
+ },
+ "aura-os": {
+  "url": "https://nurain-designs.github.io/aura-website/",
+  "title": "AURA",
+  "paths": []
+ },
+ "halo-os": {
+  "url": "https://nurain-designs.github.io/-halo-os-landing-page/",
+  "title": "Halo OS",
+  "paths": []
  },
  "prism-v2": {
   "url": "https://nurain-designs.github.io/prism-v2/",
-  "title": "Prism"
+  "title": "Prism",
+  "paths": []
  },
  "prism-v2-final": {
   "url": "https://nurain-designs.github.io/prism-v2-final/",
-  "title": "Prism"
+  "title": "Prism",
+  "paths": []
  }
 }

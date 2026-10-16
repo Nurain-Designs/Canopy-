@@ -45,7 +45,8 @@ for (const [id, t] of Object.entries(targets)) {
       if (tag === 'desktop') {
         for (const p of t.paths || []) {
           const u = new URL(p, t.url).href;
-          const res = await page.goto(u, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => null);
+          let res = await page.goto(u, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => null);
+          res = (await page.reload({ waitUntil: 'networkidle' }).catch(() => null)) || res;
           await page.waitForTimeout(1200);
           (v.directLoads ||= []).push({
             path: p,
@@ -76,6 +77,32 @@ for (const [id, t] of Object.entries(targets)) {
           v.reloadTextLen = await page.evaluate(() => document.body?.innerText.trim().length || 0);
           await page.screenshot({ path: `results/shots/${id}-nested.jpg`, type: 'jpeg', quality: 60 });
         }
+
+        // Interaction probe: click in-app nav controls and record whether content or URL changed.
+        await page.goto(t.url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => null);
+        await page.waitForTimeout(1000);
+        const sig = () => page.evaluate(() => location.href + '|' + document.body.innerText.length + '|' + (document.querySelector('h1,h2')?.innerText || '').slice(0, 40));
+        const labels = await page.evaluate((o) => {
+          const vis = (el) => { const b = el.getBoundingClientRect(); return b.width > 0 && b.height > 0 && getComputedStyle(el).visibility !== 'hidden'; };
+          return [...new Set([...document.querySelectorAll('nav button, nav a, header button, header a, [role=tab], aside button, aside a, a[href^="#"]')]
+            .filter((el) => vis(el) && !el.closest('[data-nurain-demo-notice]'))
+            .filter((el) => !(el.tagName === 'A' && el.href && new URL(el.href, location.href).origin !== o))
+            .map((el) => (el.innerText || el.getAttribute('aria-label') || '').trim().replace(/\s+/g, ' '))
+            .filter((x) => x && x.length < 40))];
+        }, origin);
+        v.clicks = [];
+        for (const label of labels.slice(0, 7)) {
+          if (v.clicks.length >= 4) break;
+          const el = page.getByText(label, { exact: true }).first();
+          if (!(await el.isVisible().catch(() => false))) continue;
+          const before = await sig();
+          await el.click({ timeout: 4000 }).catch(() => null);
+          await page.waitForTimeout(900);
+          const after = await sig();
+          v.clicks.push(`${label}: ${before === after ? 'no change' : 'changed'} ${after.split('|')[0].replace(origin, '')}`);
+          if (new URL(page.url()).origin !== origin) await page.goBack().catch(() => null);
+        }
+        v.changedClicks = v.clicks.filter((c) => c.includes('changed')).length;
       }
     } catch (e) {
       v.error = String(e).slice(0, 200);

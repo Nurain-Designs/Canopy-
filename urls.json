@@ -1,0 +1,82 @@
+{
+ "cartographer": {
+  "url": "https://cartographer-frontend-lac.vercel.app",
+  "title": "Cartographer"
+ },
+ "fieldmind": {
+  "url": "https://field-mind-sooty.vercel.app",
+  "title": "FieldMind"
+ },
+ "aura": {
+  "url": "https://aura-implementation.vercel.app",
+  "title": "AURA"
+ },
+ "medconnect": {
+  "url": "https://nurain-designs.github.io/medconnect/",
+  "title": "MedConnect"
+ },
+ "pressroom": {
+  "url": "https://nurain-designs.github.io/pressroom/",
+  "title": "pressroom"
+ },
+ "verdana": {
+  "url": "https://my-garden-verdena-leaf.vercel.app",
+  "title": "VERDANA"
+ },
+ "onyx": {
+  "url": "https://nurain-designs.github.io/onyx-hotel/",
+  "title": "ONYX"
+ },
+ "pep": {
+  "url": "https://nurain-designs.github.io/Pep/",
+  "title": "Pep"
+ },
+ "morph": {
+  "url": "https://mosaic-pi-three.vercel.app",
+  "title": "Morph"
+ },
+ "diet-o": {
+  "url": "https://diet-o-frontend.vercel.app",
+  "title": "Diet-o"
+ },
+ "drift": {
+  "url": "https://cinematic-ui-mauve.vercel.app",
+  "title": "Drift"
+ },
+ "vela": {
+  "url": "https://nurain-designs.github.io/Vela/",
+  "title": "vela"
+ },
+ "homo-interior-ai": {
+  "url": "https://nurain-designs.github.io/HOMO-Interior-AI/",
+  "title": "HOMO"
+ },
+ "lumeon": {
+  "url": "https://lumeon-three.vercel.app",
+  "title": "Lumeon"
+ },
+ "aura-os": {
+  "url": "https://nurain-designs.github.io/aura-website/",
+  "title": "AURA"
+ },
+ "halo-os": {
+  "url": "https://nurain-designs.github.io/-halo-os-landing-page/",
+  "title": "Halo OS"
+ },
+ "gridline": {
+  "url": "https://gridline-sports-52yq.vercel.app",
+  "title": "Gridline"
+ },
+ "mobile-dev-studios": {
+  "url": "https://mobile-dev-21.vercel.app",
+  "title": "Mobile Dev"
+ },
+ "prism-v2": {
+  "url": "https://nurain-designs.github.io/prism-v2/",
+  "title": "Prism"
+ },
+ "prism-v2-final": {
+  "url": "https://nurain-designs.github.io/prism-v2-final/",
+  "title": "Prism"
+ }
+}

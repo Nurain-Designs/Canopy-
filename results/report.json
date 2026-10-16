@@ -1,0 +1,730 @@
+{
+ "cartographer": {
+  "url": "https://cartographer-frontend-lac.vercel.app",
+  "expectedTitle": "Cartographer",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://cartographer-frontend-lac.vercel.app/",
+   "title": "Cartographer — Narrative World-Building Tool",
+   "titleOk": true,
+   "h1": "Every world begins with a story.",
+   "textLen": 630,
+   "text": "CARTOGRAPHER Narrative World-Building Tool Sign In Create Account Every world begins with a story. Build characters, kingdoms, timelines and legends within a living, interconnected narrative universe.",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://cartographer-frontend-lac.vercel.app/sign-in.html",
+   "navStatus": 200,
+   "navTextLen": 128,
+   "reloadStatus": 200,
+   "reloadTextLen": 128,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://cartographer-frontend-lac.vercel.app/",
+   "title": "Cartographer — Narrative World-Building Tool",
+   "titleOk": true,
+   "h1": "Every world begins with a story.",
+   "textLen": 400,
+   "text": "CARTOGRAPHER Narrative World-Building Tool Sign In Create Account Every world begins with a story. Build characters, kingdoms, timelines and legends within a living, interconnected narrative universe.",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "fieldmind": {
+  "url": "https://field-mind-sooty.vercel.app",
+  "expectedTitle": "FieldMind",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://field-mind-sooty.vercel.app/",
+   "title": "FieldMind",
+   "titleOk": true,
+   "h1": "Smart farming for the fields without signal. | No Hyper Local Data.",
+   "textLen": 2022,
+   "text": "FIELDMIND THE ARCHIVE BOTANY SUSTAINABILITY JOURNAL INQUIRE Smart farming for the fields without signal. Mic VOICE ASSISTANT ACTIVE 01 THE INFORMATION GAP No Hyper Local Data. Advice built for distric",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://field-mind-sooty.vercel.app/",
+   "title": "FieldMind",
+   "titleOk": true,
+   "h1": "Smart farming for the fields without signal. | No Hyper Local Data.",
+   "textLen": 1972,
+   "text": "FIELDMIND Smart farming for the fields without signal. Mic VOICE ASSISTANT ACTIVE 01 THE INFORMATION GAP No Hyper Local Data. Advice built for districts and states misses the exact soil, weather pocke",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "aura": {
+  "url": "https://aura-implementation.vercel.app",
+  "expectedTitle": "AURA",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://aura-implementation.vercel.app/",
+   "title": "AURA — Invisible Infrastructure for Elite Enterprises",
+   "titleOk": true,
+   "h1": "Absolute Clarity. Zero Distractions. | Crafting the Invisible.",
+   "textLen": 3516,
+   "text": "AURA Home About Services Portfolio Login Get Access Absolute Clarity. Zero Distractions. A masterclass in minimal luxury. Focus on what truly matters with our pristine, distraction-free interface — en",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://aura-implementation.vercel.app/about",
+   "navStatus": 404,
+   "navTextLen": 177,
+   "reloadStatus": 404,
+   "reloadTextLen": 177,
+   "badRequests": [
+    "404 https://aura-implementation.vercel.app/about"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://aura-implementation.vercel.app/",
+   "title": "AURA — Invisible Infrastructure for Elite Enterprises",
+   "titleOk": true,
+   "h1": "Absolute Clarity. Zero Distractions. | Crafting the Invisible.",
+   "textLen": 3480,
+   "text": "AURA Get Access Absolute Clarity. Zero Distractions. A masterclass in minimal luxury. Focus on what truly matters with our pristine, distraction-free interface — engineered for those who refuse compro",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "medconnect": {
+  "url": "https://nurain-designs.github.io/medconnect/",
+  "expectedTitle": "MedConnect",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/medconnect/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/medconnect/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/medconnect/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/medconnect/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "pressroom": {
+  "url": "https://nurain-designs.github.io/pressroom/",
+  "expectedTitle": "pressroom",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/pressroom/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/pressroom/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/pressroom/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/pressroom/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "verdana": {
+  "url": "https://my-garden-verdena-leaf.vercel.app",
+  "expectedTitle": "VERDANA",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://my-garden-verdena-leaf.vercel.app/",
+   "title": "VERDANA — Grow. Care. Connect.",
+   "titleOk": true,
+   "h1": "Bring Nature Into Your Everyday Space.",
+   "textLen": 601,
+   "text": "VERDANA GROW · CARE · CONNECT Home Care Guide Community About Us Shop FAQ My Garden 3 Bring Nature Into Your Everyday Space. Discover intelligent plant care, connect with plant lovers, and create a gr",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://my-garden-verdena-leaf.vercel.app/",
+   "title": "VERDANA — Grow. Care. Connect.",
+   "titleOk": true,
+   "h1": "Bring Nature Into Your Everyday Space.",
+   "textLen": 466,
+   "text": "VERDANA GROW · CARE · CONNECT Bring Nature Into Your Everyday Space. Discover intelligent plant care, connect with plant lovers, and create a greener, happier life with Verdana. Explore Your Garden Ev",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "onyx": {
+  "url": "https://nurain-designs.github.io/onyx-hotel/",
+  "expectedTitle": "ONYX",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/onyx-hotel/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/onyx-hotel/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/onyx-hotel/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/onyx-hotel/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "pep": {
+  "url": "https://nurain-designs.github.io/Pep/",
+  "expectedTitle": "Pep",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/Pep/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/Pep/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/Pep/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/Pep/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "morph": {
+  "url": "https://mosaic-pi-three.vercel.app",
+  "expectedTitle": "Morph",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://mosaic-pi-three.vercel.app/",
+   "title": "Morph | Contemporary Interior Design",
+   "titleOk": true,
+   "h1": "CONTEMPORARY | Modern Minimalist",
+   "textLen": 1532,
+   "text": "Morph Product Lifestyle News Projects CONTEMPORARY Crafting spaces that harmonize modern aesthetics with timeless elegance, our contemporary interior designs breathe life into every room, embodying th",
+   "brokenImages": [],
+   "overflow": true,
+   "navLink": null,
+   "badRequests": [
+    "failed https://mosaic-pi-three.vercel.app/Morph.mp4 net::ERR_ABORTED"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://mosaic-pi-three.vercel.app/",
+   "title": "Morph | Contemporary Interior Design",
+   "titleOk": true,
+   "h1": "CONTEMPORARY | Modern Minimalist",
+   "textLen": 1344,
+   "text": "Morph CONTEMPORARY Crafting spaces that harmonize modern aesthetics with timeless elegance, our contemporary interior designs breathe life into every room, embodying the essence of chic living. View M",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "failed https://mosaic-pi-three.vercel.app/Morph.mp4 net::ERR_ABORTED"
+   ],
+   "pageErrors": []
+  }
+ },
+ "diet-o": {
+  "url": "https://diet-o-frontend.vercel.app",
+  "expectedTitle": "Diet-o",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://diet-o-frontend.vercel.app/",
+   "title": "Diet-o — Eat. Plan. Thrive.",
+   "titleOk": true,
+   "h1": "Diet-o | Bring Flavor Into Your Everyday Meals",
+   "textLen": 612,
+   "text": "Diet-o EAT. PLAN. THRIVE. Home Recipes Community About Us FAQ My Kitchen (0) Bring Flavor Into Your Everyday Meals Discover intelligent recipes, connect with food lovers, and create a tastier, happier",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://diet-o-frontend.vercel.app/",
+   "title": "Diet-o — Eat. Plan. Thrive.",
+   "titleOk": true,
+   "h1": "Diet-o | Bring Flavor Into Your Everyday Meals",
+   "textLen": 499,
+   "text": "Diet-o EAT. PLAN. THRIVE. (0) Bring Flavor Into Your Everyday Meals Discover intelligent recipes, connect with food lovers, and create a tastier, happier life with Diet-o. Explore Recipes Join 75K+ fo",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "drift": {
+  "url": "https://cinematic-ui-mauve.vercel.app",
+  "expectedTitle": "Drift",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://cinematic-ui-mauve.vercel.app/",
+   "title": "Drift — AI Travel Atlas",
+   "titleOk": true,
+   "h1": "Wander without a plan. Find everything. | Over-planned. Under-experienced.",
+   "textLen": 1861,
+   "text": "Drift DESTINATIONS THE AI EXPERIENCE PRICING START DRIFT Wander without a plan. Find everything. Drift uses hyper-local intelligence to curate a spontaneous journey that adapts to your mood, the weath",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://cinematic-ui-mauve.vercel.app/",
+   "title": "Drift — AI Travel Atlas",
+   "titleOk": true,
+   "h1": "Wander without a plan. Find everything. | Over-planned. Under-experienced.",
+   "textLen": 1822,
+   "text": "Drift START DRIFT Wander without a plan. Find everything. Drift uses hyper-local intelligence to curate a spontaneous journey that adapts to your mood, the weather, and the hidden pulse of the city. G",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "vela": {
+  "url": "https://nurain-designs.github.io/Vela/",
+  "expectedTitle": "vela",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/Vela/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/Vela/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/Vela/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/Vela/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "homo-interior-ai": {
+  "url": "https://nurain-designs.github.io/HOMO-Interior-AI/",
+  "expectedTitle": "HOMO",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/HOMO-Interior-AI/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/HOMO-Interior-AI/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/HOMO-Interior-AI/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/HOMO-Interior-AI/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "lumeon": {
+  "url": "https://lumeon-three.vercel.app",
+  "expectedTitle": "Lumeon",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://lumeon-three.vercel.app/",
+   "title": "Lumeon | Work Smarter",
+   "titleOk": true,
+   "h1": "Work Smarter. Achieve More | Productivity without the chaos",
+   "textLen": 1415,
+   "text": "Home About Us Benefits Product Contact Get Started ✦ AI‑driven productivity Work Smarter. Achieve More Lumeon is your AI‑powered productivity hub that organizes tasks, automates workflows, and keeps y",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://lumeon-three.vercel.app/index.html",
+   "navStatus": 200,
+   "navTextLen": 1415,
+   "reloadStatus": 200,
+   "reloadTextLen": 1415,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://lumeon-three.vercel.app/",
+   "title": "Lumeon | Work Smarter",
+   "titleOk": true,
+   "h1": "Work Smarter. Achieve More | Productivity without the chaos",
+   "textLen": 1415,
+   "text": "Home About Us Benefits Product Contact Get Started ✦ AI‑driven productivity Work Smarter. Achieve More Lumeon is your AI‑powered productivity hub that organizes tasks, automates workflows, and keeps y",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "aura-os": {
+  "url": "https://nurain-designs.github.io/aura-website/",
+  "expectedTitle": "AURA",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/aura-website/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/aura-website/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/aura-website/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/aura-website/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "halo-os": {
+  "url": "https://nurain-designs.github.io/-halo-os-landing-page/",
+  "expectedTitle": "Halo OS",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/-halo-os-landing-page/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/-halo-os-landing-page/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/-halo-os-landing-page/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/-halo-os-landing-page/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "gridline": {
+  "url": "https://gridline-sports-52yq.vercel.app",
+  "expectedTitle": "Gridline",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://gridline-sports-52yq.vercel.app/",
+   "title": "Gridline — Sports Prediction League Engine",
+   "titleOk": true,
+   "h1": "Build matchday drama like a live scoreboard engine. | Every page works — from home to admin",
+   "textLen": 1708,
+   "text": "Gridline Sports Prediction League Engine Home Dashboard Predictions Leaderboard Social Feed League Admin HOME 2 PREMIUM SPORTS PREDICTION PLATFORM Build matchday drama like a live scoreboard engine. G",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://gridline-sports-52yq.vercel.app/",
+   "title": "Gridline — Sports Prediction League Engine",
+   "titleOk": true,
+   "h1": "Build matchday drama like a live scoreboard engine. | Every page works — from home to admin",
+   "textLen": 1630,
+   "text": "2 PREMIUM SPORTS PREDICTION PLATFORM Build matchday drama like a live scoreboard engine. Gridline is designed for sports media brands, clubs, gaming communities, and friend groups who want prediction ",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "mobile-dev-studios": {
+  "url": "https://mobile-dev-21.vercel.app",
+  "expectedTitle": "Mobile Dev",
+  "desktop": {
+   "status": 200,
+   "finalUrl": "https://mobile-dev-21.vercel.app/",
+   "title": "Mobile Dev Studios - Creative Digital Agency",
+   "titleOk": true,
+   "h1": "We Are A Creative Digital Agency",
+   "textLen": 3264,
+   "text": "Home About Services Teams Contact Us Register MOBILE DEV STUDIOS We Are A Creative Digital Agency Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Conse",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": null,
+   "badRequests": [],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 200,
+   "finalUrl": "https://mobile-dev-21.vercel.app/",
+   "title": "Mobile Dev Studios - Creative Digital Agency",
+   "titleOk": true,
+   "h1": "We Are A Creative Digital Agency",
+   "textLen": 3218,
+   "text": "MOBILE DEV STUDIOS We Are A Creative Digital Agency Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Book An Appointment 01 ABOUT US Duis aut",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [],
+   "pageErrors": []
+  }
+ },
+ "prism-v2": {
+  "url": "https://nurain-designs.github.io/prism-v2/",
+  "expectedTitle": "Prism",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/prism-v2/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/prism-v2/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/prism-v2/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/prism-v2/"
+   ],
+   "pageErrors": []
+  }
+ },
+ "prism-v2-final": {
+  "url": "https://nurain-designs.github.io/prism-v2-final/",
+  "expectedTitle": "Prism",
+  "desktop": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/prism-v2-final/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "navLink": "https://nurain-designs.github.io/",
+   "navStatus": 404,
+   "navTextLen": 223,
+   "reloadStatus": 404,
+   "reloadTextLen": 223,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/prism-v2-final/",
+    "404 https://nurain-designs.github.io/"
+   ],
+   "pageErrors": []
+  },
+  "mobile": {
+   "status": 404,
+   "finalUrl": "https://nurain-designs.github.io/prism-v2-final/",
+   "title": "Site not found · GitHub Pages",
+   "titleOk": false,
+   "h1": "404",
+   "textLen": 223,
+   "text": "404 There isn't a GitHub Pages site here. If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. GitHub St",
+   "brokenImages": [],
+   "overflow": false,
+   "badRequests": [
+    "404 https://nurain-designs.github.io/prism-v2-final/"
+   ],
+   "pageErrors": []
+  }
+ }
+}
